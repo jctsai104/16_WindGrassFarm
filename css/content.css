@@ -1,0 +1,125 @@
+.full{
+    width: 100%;
+}
+.width{
+    width: 1200px;
+    margin: auto;
+}
+content > img{
+    width: 100%;
+}
+.container{
+    padding-bottom: 60px;
+}
+.justify-content-center{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+
+/* 分類目錄 */
+
+.list{
+    display: flex;
+}
+ul{
+    display: inline-block;
+    list-style: none;
+}
+.list button{
+    display: inline-block;
+    border: none;
+    background-color: #D0CDC2;
+    color: #847F6E;
+    margin: 20px 15px;
+    padding: 10px 25px;
+    border-radius: 2px;
+    font-size: 16px;
+    transition: .3s;
+}
+.list button:hover{
+    background-color: #FFA015;
+    color: #fff;
+}
+.listSidebar a{
+    color: #3F6E29;
+}
+li:nth-child(1){
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* 商品左欄 */
+.listSidebar {
+    width: 85%;
+    padding-top: 10px;
+    /* border: 1px solid #000; */
+}
+.listSidebar li{
+    padding-top: 10px;
+}
+
+/* 商品們 */
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    width: 100px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.item:hover{
+    box-shadow: 0px 0px 10px 2px #ddd;
+    cursor: pointer;
+}
+.productsPic img{
+    width: 100%;
+    border-radius: 5px;
+}
+.productsInfo{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.productsInfo h3{
+    font-size: 20px;
+    color: #FFA015;
+}
+.productsInfo h4{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.productsInfo h4:hover{
+    color:#FFA015;
+    cursor: pointer;
+}
+
+
+.txt{
+    display: inline-block;
+    letter-spacing: 10px;
+    color: #847F6E;
+    font-size: 18px;
+}
+.buy{
+    width: 100%;
+    background-color: #f8f6ee;
+    padding: 10px 10px;
+    margin-top: 18px;
+    border: none;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+}
+.buy img{
+    margin-right: 10px;
+}
+.buy:hover{
+    cursor: pointer;
+    background-color: #D0CDC2;
+}

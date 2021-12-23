@@ -1,0 +1,310 @@
+content{
+    position: relative;
+}
+.width{
+    width: 1200px;
+    margin: auto;
+}
+.full{
+    width: 100%;
+    background-color: #f8f6ee;
+}
+h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+}
+h2{
+    font-size: 40px;
+    color: #80BC63;
+    padding-top: 90px;
+    margin-bottom: 24px;
+    letter-spacing: 10px;
+}
+h3{
+    letter-spacing: 3px;
+    padding-top: 16px;
+    font-size: 24px;
+    color: #3F6E29;
+}
+h4{
+    font-size: 16px;
+    color: #3F6E29;
+}
+.justify-content-center{
+    display: flex;
+    justify-content: center;
+}
+
+/* --第一屏-- */
+
+.sidebar h2{
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.sidebar > p{
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 16px;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -500px;
+    left: 200px;
+}
+.socialMedia a{
+    margin: 12px 0;
+    transform: translateY(0);
+}
+.socialMedia a:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+}
+.sidebar{
+    width: 600px;
+    position: absolute;
+    top: -500px;
+    left: 400px;
+}
+button{
+    margin: 8px 0;
+    padding: 8px 20px;
+    border-radius: 300px;
+    border: none;
+    letter-spacing: 2px;
+    transform: translate(0);
+    transition: .3s;
+}
+button:hover{
+    background-color: #FFA015;
+    color: #fff;
+    transform: translate(1px , 2px);
+}
+
+
+/* --三大核心-- */
+
+.threePoint{
+    align-items: center;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+/* 有共用 */
+.wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.item{
+    margin: 15px;
+    text-align: center;
+}
+
+/* --中間Banner-- */
+
+.banner{
+    height: 700px;
+    background-image: url(../pic/corn.jpg);
+    background-repeat: no-repeat fixed;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+/* --線上訂購-- */
+
+.full.bg{
+    background-image: url(../pic/white-paper-texture.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+.product{
+    padding-bottom: 40px;
+}
+.goods{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    /* box-shadow: 1px 1px 5px 2px rgb(212, 212, 212), 
+                -1px -1px 5px 2px #fff; */
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px;
+}
+.goods img{
+    padding-top: 28px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+.goods:hover{
+    box-shadow: 0px 0px 10px 2px #ddd;
+}
+.name{
+    width: 200px;
+    display: flex;
+    padding-bottom: 28px;
+}
+.name > P{
+    color: #FFA015;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 4px;
+}
+.name > h4{
+    flex-grow: 1;
+    margin-left: 4px;
+}
+.arrow:hover{
+    transform: scale(1.5);
+    transition: .3s;
+    cursor: pointer;
+}
+.goods img:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+    cursor: pointer;
+}
+.goods h4:hover{
+    color: #FFA015;
+    cursor: pointer;
+}
+.goods:hover{
+    filter: brightness(1);
+    transition: #fff 0.15s ease-in-out
+}
+.moreBlock{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.moreButton{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    display: inline-block;
+    margin-top: 16px;
+}
+.moreButton .imgTop{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.moreButton:hover .imgTop{
+    display: inline;
+    cursor: pointer;
+}
+
+.greenLine::before{
+    content: '';
+    border-bottom: 2px solid #80BC63;
+    display: inline-block;
+    margin-bottom: 5px;
+    height: 1px;
+    width: 500px;
+    position: relative;
+    top: -35px;
+    left: -20px;
+}
+.greenLine::after{
+    content: '';
+    border-bottom: 2px solid #80BC63;
+    display: inline-block;
+    margin-bottom: 5px;
+    height: 1px;
+    width: 500px;
+    position: relative;
+    top: -35px;
+    right: -20px;
+}
+
+/* 有共用 */
+.more{
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(0);
+    margin-top: 16px;
+}
+.more a{
+    display: inline-block;
+    text-decoration: none;
+    color: #847F6E;
+}
+.more p{
+    display: inline-block;
+}
+.more a:hover{
+    color: #FFA015;
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+/* --近期消息-- */
+
+.news{
+    padding-bottom: 40px;
+}
+.item.article{
+    width: 270px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 2px rgb(212, 212, 212), 
+                -1px -1px 5px 2px #fff;
+    border-radius: 15px;
+    transform: translate(0);
+}
+.item.item.article:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+    cursor: pointer;
+}
+.item.item.article img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.item .txt{
+    margin: 8px 16px;
+}
+.txt h4{
+    text-align: left;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+.txt p{
+    line-height: 1.7;
+    text-align: left;
+    font-size: 14px;
+    color: #80BC63;
+    padding-bottom: 16px;
+}
+.txt a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #3F6E29;
+    display: inline-block;
+}
+.txt .line:after{
+    content: '';
+    background-color: #80BC63;
+    height: 1px;
+    width: 0%;
+    display: block;
+    transition: .4s;
+}
+.txt .line:hover:after{
+    width: 100%;
+    height: 1px;
+}
+
+

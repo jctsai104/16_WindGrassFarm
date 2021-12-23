@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    margin: auto;
+}
+.bgImg{
+    background-image: url(../pic/bg-tomatoes.jpg);
+    background-repeat: no-repeat fixed;
+    background-size: cover;
+    height: 720px;
+    background-attachment: fixed;
+    filter: brightness(0.9);
+}
+.width{
+    width: 1200px;
+    margin: auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+nav ul{
+    margin: auto;
+    align-items: center;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    /* color: #3f6e29; */
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+nav li a::after {
+	position: absolute;
+	content: '';
+	width: 0%;
+	height: 2px;
+	background-color: #fff;
+	left: 50%;
+	bottom: -10px;
+	transition: all 0.4s ease-in-out;
+}
+
+nav li:hover a::after {
+	width: 100%;
+	left: 0;
+}
+
+
+nav li{
+    margin: 0px 16px;
+    display: inline-block;
+    align-items: center;
+    /* transform: translate(0); */
+    font-weight: 700;
+    position: relative;
+}
+.logo{
+    margin-top: 16px;
+}
+
+/* li:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+} */
