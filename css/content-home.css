@@ -12,7 +12,7 @@ content{
 h1{
     color: #fff;
     font-size: 60px;
-    font-weight: 700;
+    font-weight: bold;
 }
 h2{
     font-size: 40px;
@@ -20,6 +20,7 @@ h2{
     padding-top: 90px;
     margin-bottom: 24px;
     letter-spacing: 10px;
+    font-weight: bold;
 }
 h3{
     letter-spacing: 3px;
@@ -35,6 +36,36 @@ h4{
     display: flex;
     justify-content: center;
 }
+/* more按鈕 */
+.moreBlock{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.moreButton{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    display: inline-block;
+    margin-top: 16px;
+}
+.moreButton .imgTop{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.moreButton img:active{
+    transition: .3s;
+    transform: scale(1.2);
+}
+.moreButton:hover .imgTop{
+    display: inline;
+    cursor: pointer;
+}
 
 /* --第一屏-- */
 
@@ -43,11 +74,13 @@ h4{
     color: #fff;
     font-size: 40px;
     letter-spacing: 3px;
+    opacity: 85%;
 }
 .sidebar > p{
     margin-bottom: 8px;
     color: #fff;
     font-size: 16px;
+    opacity: 85%;
 }
 .socialMedia{
     display: flex;
@@ -133,8 +166,6 @@ button:hover{
     justify-content: center;
     align-items: center;
     width: 240px;
-    /* box-shadow: 1px 1px 5px 2px rgb(212, 212, 212), 
-                -1px -1px 5px 2px #fff; */
     background-color: #fff;
     border-radius: 10px;
     margin: 30px;
@@ -162,6 +193,10 @@ button:hover{
     flex-grow: 1;
     margin-left: 4px;
 }
+.arrow img:active{
+    transition: .3s;
+    transform: scale(0.7);
+}
 .arrow:hover{
     transform: scale(1.5);
     transition: .3s;
@@ -180,31 +215,7 @@ button:hover{
     filter: brightness(1);
     transition: #fff 0.15s ease-in-out
 }
-.moreBlock{
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px 0;
-}
 
-.moreButton{
-    width: 75px;
-    height: 75px;
-    position: relative;
-    display: inline-block;
-    margin-top: 16px;
-}
-.moreButton .imgTop{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-.moreButton:hover .imgTop{
-    display: inline;
-    cursor: pointer;
-}
 
 .greenLine::before{
     content: '';

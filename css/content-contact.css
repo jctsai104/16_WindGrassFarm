@@ -1,0 +1,64 @@
+.full{
+    width: 100%;
+}
+.width{
+    width: 1200px;
+    margin: auto;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.banner{
+    vertical-align: top;
+    width: 100%;
+}
+h2{
+    padding-top: 60px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #80BC63;
+    letter-spacing: 10px;
+}
+h3{
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 24px;
+}
+content ~ img{
+    vertical-align: top;
+}
+
+/* 聯絡我們 */
+.wrap{
+    display: flex;
+    padding-bottom: 60px;
+}
+/* .info{
+    margin-left: 40px;
+}    */
+.item{
+    display: flex;
+    align-items: center;
+}
+.item p {
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.pic{
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.socialMedia img{
+    margin: 30px 10px 0px 0px;
+}
