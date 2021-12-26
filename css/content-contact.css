@@ -45,9 +45,6 @@ content ~ img{
     display: flex;
     padding-bottom: 60px;
 }
-/* .info{
-    margin-left: 40px;
-}    */
 .item{
     display: flex;
     align-items: center;
@@ -61,7 +58,11 @@ content ~ img{
     margin-right: 10px;
     margin-bottom: 10px;
 }
-
+.leftPic img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
 .socialMedia img{
     margin: 30px 10px 0px 0px;
     transform: translateY(0);

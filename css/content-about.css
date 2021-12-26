@@ -1,0 +1,166 @@
+body{
+    font-family: sans-serif;
+}
+.full{
+    width: 100%;
+}
+.width{
+    width: 1200px;
+    margin: auto;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.banner{
+    vertical-align: top;
+    width: 100%;
+}
+h2{
+    padding-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #80BC63;
+    letter-spacing: 10px;
+}
+h3{
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+/* .bgimg{
+    background-image: url(../pic/paper.jpg);
+    background-repeat: repeat;
+} */
+
+/* 關於風草+何謂樸門 */
+.wrap{
+    display: flex;
+    padding-bottom: 60px;
+}
+.wrap:nth-child(2){
+    flex-direction: row-reverse;
+}
+.sidePic img{
+    margin: auto;
+    display: flex;
+}
+.txt{
+    display: flex;
+    align-items: center;
+}
+.txt p {
+    line-height: 1.7;
+    color: #888;
+    text-indent: 20px;
+}
+.txt p::first-letter{
+    font-size: 180%;
+}
+strong{
+    font-weight: 600;
+    color: #FFA015;
+}
+/* 三大核心 */
+.threePoints{
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.item img{
+    margin-bottom: 25px;
+}
+.item p{
+    text-align: left;
+    font-size: 15px;
+    color: #888;
+    line-height: 1.5;
+}
+/* 里程碑 */
+.goal{
+    padding-bottom: 60px;
+}
+.goal-item{
+    /* outline: 1px solid red; */
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+.goal-item:before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #3F6E29;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;                
+}
+.goal-item:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #3F6E29;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;  
+}
+.goal-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+.goal-item .picture{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+.picture img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 10px;
+}
+.goal-item:nth-child(odd) .picture{
+    padding-right: 20px;
+}
+.goal-item:nth-child(even) .picture{
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+
+.goal-item .timing{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+.goal-item:nth-child(odd) .timing{
+    padding-left: 20px;
+}
+.goal-item:nth-child(even) .timing{
+    padding-right: 20px;
+}
+
+.timing{
+    text-align: center;
+}

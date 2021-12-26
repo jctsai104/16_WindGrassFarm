@@ -1,0 +1,130 @@
+body{
+    font-family: sans-serif;
+}
+.full{
+    width: 100%;
+}
+.width{
+    width: 1200px;
+    margin: auto;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.banner{
+    vertical-align: top;
+    width: 100%;
+}
+h2{
+    padding-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #80BC63;
+    letter-spacing: 10px;
+}
+h3{
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* 日曆 */
+#schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+}
+#calendarContain {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: left;
+    overflow: hidden;
+}
+#calendarHeader {
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+#schedule .month {
+    color: #FFA015;
+    font-size: 30px;
+}
+#schedule .lastmonth {
+    font-size: 16px;
+    color: #D0CDC2;
+    cursor: pointer;
+}
+#schedule .nextmonth {
+    font-size: 16px;
+    color: #D0CDC2;
+    cursor: pointer;
+}
+#schedule .lastmonth:after,
+#schedule .nextmonth:after {
+    border-bottom: 1px solid #D0CDC2;
+    content: '';
+    display: block;
+    width: 0%;
+    transition: .4s;
+}
+#schedule .lastmonth:hover:after, 
+#schedule .nextmonth:hover:after {
+    width: 100%;
+}
+#schedule .week {
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+#schedule #week0 {
+    height: 30px;
+    line-height: 12px;
+    background-color: #FFA015;
+    color: #fff;
+    font-size: 24px;
+}
+#schedule .day {
+    width: calc(100% / 7);
+    border: 1px solid #FFA015;
+    color: #663A00;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
+    transition: .3s;
+}
+#schedule .week:not(#week0) .day:not(:empty):hover {
+    box-shadow: 0 0 3px 2px #c2b5ac;
+    cursor: pointer;
+}
+#schedule .week:not(#week0) .day:not(:empty):active {
+    transform: scale(0.9);
+}
+#schedule #week5 .day0 {
+    border-bottom-left-radius: 15px;
+}
+#schedule #week5 .day6 {
+    border-bottom-right-radius: 15px;
+}
+
+/* calendar footer */
+#schedule .calendarFooter {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
