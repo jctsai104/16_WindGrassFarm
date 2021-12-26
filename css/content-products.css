@@ -24,6 +24,17 @@ img{
 .banner{
     width: 100%;
 }
+.width h2{
+    padding-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #80BC63;
+    letter-spacing: 10px;
+}
 /* 分類目錄 */
 
 .list{
