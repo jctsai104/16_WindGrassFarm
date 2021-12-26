@@ -109,7 +109,7 @@ h3{
     transition: .3s;
 }
 #schedule .week:not(#week0) .day:not(:empty):hover {
-    box-shadow: 0 0 3px 2px #c2b5ac;
+    box-shadow: 0 0 3px 2px #b39d8d;
     cursor: pointer;
 }
 #schedule .week:not(#week0) .day:not(:empty):active {
