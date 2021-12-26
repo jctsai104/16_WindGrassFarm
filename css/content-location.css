@@ -1,6 +1,3 @@
-body{
-    font-family: sans-serif;
-}
 .full{
     width: 100%;
 }
@@ -40,14 +37,11 @@ content ~ img{
     vertical-align: top;
 }
 
-/* 聯絡我們 */
+/* 交通資訊 */
 .wrap{
     display: flex;
     padding-bottom: 60px;
 }
-/* .info{
-    margin-left: 40px;
-}    */
 .item{
     display: flex;
     align-items: center;
@@ -56,13 +50,11 @@ content ~ img{
     line-height: 1.2;
     margin-bottom: 10px;
 }
-
 .pic{
     vertical-align: middle;
     margin-right: 10px;
     margin-bottom: 10px;
 }
-
 .socialMedia img{
     margin: 30px 10px 0px 0px;
 }

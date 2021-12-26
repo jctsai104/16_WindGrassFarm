@@ -56,6 +56,7 @@ img{
 .listSidebar li:nth-child(1){
     font-weight: bold;
     font-size: 20px;
+    margin-bottom: 5px;
 }
 
 
@@ -169,6 +170,12 @@ button:hover{
     cursor: pointer;
 }
 /* 右欄資訊 */
+.rightPart{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 h2{
     font-size: 40px;
     color: #80BC63;
@@ -182,9 +189,6 @@ h3{
     margin-bottom: 16px;
     font-size: 22px;
     color: #3F6E29;
-}
-.rightBar{
-    margin-left: 20px;
 }
 .rightBar ul li{
     padding: 10px 0;
