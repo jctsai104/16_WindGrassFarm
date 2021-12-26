@@ -64,10 +64,4 @@ content ~ img{
 
 .socialMedia img{
     margin: 30px 10px 0px 0px;
-    transform: translateY(0);
-}
-
-.socialMedia img:hover{
-    transform: translateY(-3px);
-    transition: .5s;
 }

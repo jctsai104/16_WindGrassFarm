@@ -1,3 +1,6 @@
+body{
+    font-family: sans-serif;
+}
 .full{
     width: 100%;
 }
@@ -15,16 +18,19 @@
 a{
     text-decoration: none;
 }
+img{
+    vertical-align: top;
+}
 .banner{
     width: 100%;
-    vertical-align: top;
 }
 /* 分類目錄 */
 
 .list{
     display: flex;
+    margin-bottom: 15px;
 }
-ul{
+.list ul{
     display: inline-block;
     list-style: none;
 }
@@ -33,9 +39,10 @@ ul{
     border: none;
     background-color: #D0CDC2;
     color: #847F6E;
+    letter-spacing: 5px;
     margin: 20px 15px;
-    padding: 10px 25px;
-    border-radius: 2px;
+    padding: 10px 20px 10px 25px;
+    border-radius: 5px;
     font-size: 16px;
     transition: .3s;
 }
@@ -46,13 +53,13 @@ ul{
 .listSidebar a{
     color: #3F6E29;
 }
-li:nth-child(1){
+.listSidebar li:nth-child(1){
     font-weight: bold;
     font-size: 20px;
 }
 
 
-/* 商品左欄 */
+/* 商品左欄分類 */
 .listSidebar {
     width: 85%;
     padding-top: 10px;
@@ -124,4 +131,101 @@ li:nth-child(1){
 button:hover{
     cursor: pointer;
     background-color: #ffbd59;
+}
+/* 商品詳細頁 */
+.path{
+    margin-left: 10px;
+}
+.path ul{
+    list-style: none;
+    display: flex;
+}
+.path li{
+    position: relative;
+    color: #FFA015;
+    padding: 10px;
+}
+.path li a{
+    color: #3F6E29;
+    font-size: 16px;;
+}
+.path li + li::before{
+    content: '/';
+    color: #aaa;
+    position: absolute;
+    left: 0;
+}
+/* 大小圖 */
+.detail{
+    display: flex;
+}
+.smallPic{
+    width: 570px;
+}
+.smallPic img{
+    margin: 20px 10px 10px 0px;
+}
+.largePic img:hover , .smallPic img:hover {
+    cursor: pointer;
+}
+/* 右欄資訊 */
+h2{
+    font-size: 40px;
+    color: #80BC63;
+    margin-bottom: 24px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+h3{
+    letter-spacing: 3px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    font-size: 22px;
+    color: #3F6E29;
+}
+.rightBar{
+    margin-left: 20px;
+}
+.rightBar ul li{
+    padding: 10px 0;
+    color: #999;
+}
+.rightBar ul li::before{
+    content: '❋';
+    margin-right: 2px;
+    /* display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #999;
+    border-radius: 50%;
+    position: relative;
+    left: -10px;
+    top: 10px; */
+}
+hr{
+    background-color: #ddd;
+}
+ol li{
+    margin: 15px 0;
+    color: #666;
+    font-size: 14px;
+}
+.add {
+    background-color: #FFA015;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 300px;
+}
+.freeShip{
+    color: #f00;
+    font-size: 13px;
+    margin: 0 15px;
+}
+.addCart{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }

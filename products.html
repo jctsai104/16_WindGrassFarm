@@ -5,36 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>風草農園 :: 線上訂購</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/content-products.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="icon" href="pic/littleLogo-12.ico" type="image/x-icon">
 
 </head>
 <body>
     <header>
         <div class="width">
             <nav> 
-            <!-- 左邊 -->
-            <ul>
-                <li><a href="#">農園理念</a></li>
-                <li><a href="#">近期消息</a></li>
-                <li><a href="products.html">線上訂購</a></li>
-            </ul>
-            <div class="logo">
-                <a href="homepage.html"><img src="pic/newLogo-10-w-10.svg" alt="logo"height="75px"></a>
-            </div>
-            <!-- 右邊 -->
-            <ul>
-                <li><a href="#">預約參觀</a></li>
-                <li><a href="#">交通資訊</a></li>
-                <li><a href="contact.html">聯絡我們</a></li>
-            </ul>
+                <!-- 左邊 -->
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
+                <div class="logo">
+                    <a href="homepage.html"><img src="pic/txtLogoWhite.svg" alt="logo"height="50px"></a>
+                </div>
+                <!-- 右邊 -->
+                <ul>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
     <content>
         <img src="pic/banner-products.jpg" class="banner" alt="banner">
+        <!-- 分類目錄 -->
         <div class="list center">
             <button>蔬果</button>
             <button>農產品</button>
@@ -43,6 +46,7 @@
         </div>
         <div class="container">
             <div class="row">
+                <!-- 商品左欄分類 -->
                 <div class="listSidebar">
                     <ul>
                         <li><a href="#">蔬果</a></li>
@@ -53,24 +57,24 @@
                 <div class="products">
                     <div class="wrap">
                         <!-- 商品卡片 -->
-                        <div class="item col-2">
+                        <a href="products-detail.html"><div class="item col-2">
                             <div class="productsPic">
-                                <img src="pic/product_corrot.png" width="100px" alt="">
+                                <img src="pic/product_corrot.png" width="100px" alt="有機紅蘿蔔">
                             </div>
                             <div class="productsInfo">
                                 <h4>有機紅蘿蔔</h4> 
                                 <h3>$28</h3>
                             </div>
-                            <a href="#"><button class="buy">
+                            <a href="products-detail.html"><button class="buy">
                                     <img src="pic/shopping-cart.svg" width="24px" alt="加入購物車">
                                     <div class="txt">訂購</div>
                             </button></a>
-                        </div>
+                        </div></a>
                         <!-- end -->
                         <!-- 商品卡片 -->
                         <div class="item col-2">
                             <div class="productsPic">
-                                <img src="pic/appetite.jpg" width="100px" alt="">
+                                <img src="pic/appetite.jpg" width="100px" alt="花椰菜">
                             </div>
                             <div class="productsInfo">
                                 <h4>花椰菜</h4> 
@@ -85,7 +89,7 @@
                         <!-- 商品卡片 -->
                         <div class="item col-2">
                             <div class="productsPic">
-                                <img src="pic/product_tomato.jpg" width="100px" alt="">
+                                <img src="pic/product_tomato.jpg" width="100px" alt="鮮採牛番茄">
                             </div>
                             <div class="productsInfo">
                                 <h4>鮮採牛番茄</h4> 
@@ -100,7 +104,7 @@
                         <!-- 商品卡片 -->
                         <div class="item col-2">
                             <div class="productsPic">
-                                <img src="pic/ginger.jpg" width="100px" alt="">
+                                <img src="pic/ginger.jpg" width="100px" alt="有機老薑">
                             </div>
                             <div class="productsInfo">
                                 <h4>有機老薑</h4> 
@@ -115,11 +119,11 @@
                         <!-- 商品卡片 -->
                         <div class="item col-2">
                             <div class="productsPic">
-                                <img src="pic/product_corrot.png" width="100px" alt="">
+                                <img src="pic/pumpkin.jpg" width="100px" alt="南瓜">
                             </div>
                             <div class="productsInfo">
-                                <h4>有機紅蘿蔔</h4> 
-                                <h3>$28</h3>
+                                <h4>南瓜</h4> 
+                                <h3>$80</h3>
                             </div>
                             <a href="#"><button class="buy">
                                     <img src="pic/shopping-cart.svg" width="24px" alt="加入購物車">
@@ -130,11 +134,11 @@
                         <!-- 商品卡片 -->
                         <div class="item col-2">
                             <div class="productsPic">
-                                <img src="pic/product_corrot.png" width="100px" alt="">
+                                <img src="pic/potatoes.jpg" width="100px" alt="在地馬鈴薯">
                             </div>
                             <div class="productsInfo">
-                                <h4>有機紅蘿蔔</h4> 
-                                <h3>$28</h3>
+                                <h4>在地馬鈴薯</h4> 
+                                <h3>$32</h3>
                             </div>
                             <a href="#"><button class="buy">
                                     <img src="pic/shopping-cart.svg" width="24px" alt="加入購物車">
@@ -145,11 +149,11 @@
                         <!-- 商品卡片 -->
                         <div class="item col-2">
                             <div class="productsPic">
-                                <img src="pic/product_corrot.png" width="100px" alt="">
+                                <img src="pic/product_vegebox.jpeg" width="100px" alt="防疫蔬菜箱">
                             </div>
                             <div class="productsInfo">
-                                <h4>有機紅蘿蔔</h4> 
-                                <h3>$28</h3>
+                                <h4>防疫蔬菜箱</h4> 
+                                <h3>$299</h3>
                             </div>
                             <a href="#"><button class="buy">
                                     <img src="pic/shopping-cart.svg" width="24px" alt="加入購物車">

@@ -11,13 +11,13 @@ content{
 }
 h1{
     color: #fff;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: bold;
+    padding-bottom: 40px;
 }
 h2{
     font-size: 40px;
     color: #80BC63;
-    padding-top: 90px;
     margin-bottom: 24px;
     letter-spacing: 10px;
     font-weight: bold;
@@ -32,9 +32,14 @@ h4{
     font-size: 16px;
     color: #3F6E29;
 }
-.justify-content-center{
+.center{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.pt-90{
+    padding-top: 90px;
 }
 /* more按鈕 */
 .moreBlock{
