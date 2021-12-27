@@ -146,7 +146,7 @@ button:hover{
 }
 /* 商品詳細頁 */
 .path{
-    margin-left: 10px;
+    margin: 15px 10px;
 }
 .path ul{
     list-style: none;

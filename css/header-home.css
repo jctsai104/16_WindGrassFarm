@@ -8,9 +8,9 @@ header{
 }
 .bgImg{
     background-image: url(../pic/bg-tomatoes.jpg);
-    background-repeat: no-repeat fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 720px;
+    padding-bottom: 720px;
     background-attachment: fixed;
 }
 .width{
@@ -20,7 +20,11 @@ header{
 nav{
     display: flex;
     align-items: center;
-    height: 120px;
+    padding-top: 30px;
+    /* position: absolute;
+    top: 0;
+    left: auto;
+    right: auto; */
 }
 nav ul{
     margin: auto;

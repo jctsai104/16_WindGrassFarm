@@ -11,9 +11,10 @@ header{
     margin: auto;
 }
 nav{
+    padding-top: 30px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
-    height: 120px;
 }
 nav ul{
     margin: auto;

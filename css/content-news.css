@@ -42,12 +42,6 @@ h5{
     color:#80BC63;
     margin-left: 10px;
 }
-content ~ img{
-    vertical-align: top;
-}
-
-
-/* 近期消息 */
 
 /* 文章卡片 */
 .article{
