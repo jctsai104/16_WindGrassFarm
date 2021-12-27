@@ -18,9 +18,6 @@ header{
     margin: auto;
 }
 nav{
-    position: sticky;
-    top: 0;
-    right: 0;
     display: flex;
     align-items: center;
     height: 120px;
