@@ -1,0 +1,103 @@
+#menuToggle{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+ 
+#menuToggle a{
+    text-decoration: none;
+    color: #80BC63;
+    transition: color 0.3s ease;
+}
+ 
+#menuToggle a:hover{
+    color: #FFA015;
+}
+ 
+#menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -5px;
+    left: -7px;
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 2; 
+    -webkit-touch-callout: none;
+}
+
+ /* 漢堡包 */
+#menuToggle span{
+    display: block;
+    width: 21px;
+    height: 2px;
+    margin-bottom: 4px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 2px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+ 
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+ 
+#menuToggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #3F6E29;
+}
+ 
+#menuToggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2){
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: -100px 0 0 -50px;
+    /* padding-right: 50px; */
+    padding-top: 115px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 22px;
+}
+ 
+
+ /*
+  * And let's slide it in from the left
+  */
+#menuToggle input:checked ~ ul{
+    transform: none;
+}

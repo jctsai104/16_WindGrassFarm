@@ -1,0 +1,23 @@
+body{
+    font-family: sans-serif;
+}
+.bgImg{
+    background-image: url(../pic/bg-tomatoes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 844px;
+    background-attachment: fixed;
+}
+.center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 15px;
+}
+
+
+@media screen and (min-width:768px) {
+    
+}
