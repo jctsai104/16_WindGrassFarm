@@ -5,9 +5,9 @@ body{
     background-image: url(../pic/bg-tomatoes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width:100%;
-    padding-bottom: 100%;
     background-position: center center;
+    background-attachment: fixed;
+    height:100vh;
 }
 .logo{
     position: fixed;
@@ -15,7 +15,6 @@ body{
     right: 15px;
     margin: 15px;
 }
-
 
 @media screen and (min-width:768px) {
     

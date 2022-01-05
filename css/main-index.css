@@ -9,7 +9,7 @@
 }
 h1{
     color: #fff;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bold;
 }
 h2{
@@ -42,6 +42,9 @@ h4{
 .pb-90{
     padding-bottom: 90px;
 }
+.pt-90{
+    padding-top: 90px;
+}
 img{
     vertical-align: top;
 }
@@ -56,6 +59,47 @@ a{
     width: 50%;
     border-radius: 15px;
 }
+/* 第一屏 */
+.sidebar{
+    position: absolute;
+    top: 360px;
+    /* left: 100px; */
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    margin: auto;
+    text-align: center;
+}
+.sidebar h2{
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 3px;
+    opacity: 85%;
+    padding-bottom: 40px;
+}
+.sidebar p{
+    color: #fff;
+    font-size: 16px;
+    opacity: 85%;
+    padding-bottom: 40px;
+}
+/* button{
+    cursor: pointer;
+    background-color: #FFA015;
+    margin: 8px 0;
+    padding: 8px 20px;
+    border-radius: 300px;
+    border: none;
+    letter-spacing: 2px;
+    transform: translate(0);
+    transition: .3s;
+}
+
+button:hover{
+    background-color: #ffc46c;
+    color: #fff;
+    transform: translate(1px , 2px);
+} */
 
 /* 三大核心 */
 .wrap .item{
@@ -72,4 +116,5 @@ a{
     justify-content: center;
     align-items: center;
     margin: auto;
+    padding-bottom: 24px;
 }
