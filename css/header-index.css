@@ -5,15 +5,14 @@ body{
     background-image: url(../pic/bg-tomatoes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-bottom: 844px;
     background-attachment: fixed;
 }
-.center{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .logo{
+    position: fixed;
+    top: 15px;
+    right: 15px;
     margin: 15px;
 }
 

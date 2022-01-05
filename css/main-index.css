@@ -1,0 +1,72 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+}
+h1{
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+}
+h2{
+    font-size: 40px;
+    color: #80BC63;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+h3{
+    display: inline-block;
+    font-size: 24px;
+    color: #3F6E29;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+h4{
+    font-size: 18px;
+    color: #3F6E29;
+    font-weight: 500;
+}
+.pb-24{
+    padding-bottom: 24px;
+}
+.pb-40{
+    padding-bottom: 40px;
+}
+.pb-60{
+    padding-bottom: 60px;
+}
+.pb-90{
+    padding-bottom: 90px;
+}
+img{
+    vertical-align: top;
+}
+.threePoints img{
+    width: 30%;
+}
+.goods .pic img{
+    margin: auto;
+    width: 50%;
+    border-radius: 15px;
+}
+
+/* 三大核心 */
+.wrap .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 推薦商品 */
+.goods{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
