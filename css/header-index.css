@@ -6,9 +6,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     max-width:100%;
-    background-position: center;
-    padding-bottom: 844px;
-    background-attachment: fixed;
+    padding-bottom: 100%;
+    background-position: center center;
 }
 .logo{
     position: fixed;
