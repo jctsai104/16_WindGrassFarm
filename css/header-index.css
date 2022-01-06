@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
 }
 .bgImg{
-    background-image: url(../pic/bg-tomatoes.jpg);
+    background-image: url(../pic/bg-tomatoes-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -16,6 +16,13 @@ body{
     margin: 15px;
 }
 
-@media screen and (min-width:768px) {
-    
+@media screen and (min-width:992px) {
+    .bgImg{
+        background-image: url(../pic/bg-tomatoes.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        height:100vh;
+    }
 }

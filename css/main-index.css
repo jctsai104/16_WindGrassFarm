@@ -9,11 +9,12 @@
 }
 h1{
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
+    display: inline-block;
 }
 h2{
-    font-size: 40px;
+    font-size: 30px;
     color: #80BC63;
     letter-spacing: 10px;
     font-weight: bold;
@@ -30,6 +31,9 @@ h4{
     color: #3F6E29;
     font-weight: 500;
 }
+p{
+    font-size: 14px;
+}
 .pb-24{
     padding-bottom: 24px;
 }
@@ -44,6 +48,15 @@ h4{
 }
 .pt-90{
     padding-top: 90px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.mb-90{
+    margin-bottom: 90px;
 }
 img{
     vertical-align: top;
@@ -61,27 +74,29 @@ a{
 }
 /* 第一屏 */
 .sidebar{
+    margin: auto;
     position: absolute;
     top: 360px;
-    /* left: 100px; */
     left: 50%;
     right: 0;
     transform: translateX(-50%);
-    margin: auto;
     text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 }
 .sidebar h2{
     color: #fff;
-    font-size: 32px;
     letter-spacing: 3px;
     opacity: 85%;
-    padding-bottom: 40px;
+    margin-bottom: 60px;
+    display: inline-block;
 }
 .sidebar p{
     color: #fff;
     font-size: 16px;
     opacity: 85%;
-    padding-bottom: 40px;
+    display: inline-block;
 }
 /* button{
     cursor: pointer;
