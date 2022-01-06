@@ -58,6 +58,9 @@ p{
 .mb-90{
     margin-bottom: 90px;
 }
+.mt-90{
+    margin-top: 90px;
+}
 img{
     vertical-align: top;
 }
@@ -67,36 +70,44 @@ a{
 .threePoints img{
     width: 30%;
 }
-.goods .pic img{
-    margin: auto;
-    width: 50%;
-    border-radius: 15px;
-}
+
 /* 第一屏 */
-.sidebar{
+.mainTxt{
     margin: auto;
-    position: absolute;
-    top: 360px;
-    left: 50%;
+    position: relative;
+    top: 330px;
+    /* left: 50%;
     right: 0;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
     text-align: center;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
 }
-.sidebar h2{
+.mainTxt h2{
     color: #fff;
     letter-spacing: 3px;
     opacity: 85%;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     display: inline-block;
 }
-.sidebar p{
+.mainTxt p{
     color: #fff;
     font-size: 16px;
     opacity: 85%;
     display: inline-block;
+}
+.mainTxt:after{
+    content: '';
+    background: #fff;
+    height: 1px;
+    width: 120px;
+    position: relative;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    transform: rotate(90deg);
+    margin: auto;
 }
 /* button{
     cursor: pointer;
@@ -117,11 +128,12 @@ button:hover{
 } */
 
 /* 三大核心 */
-.wrap .item{
+.item{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 /* 推薦商品 */
@@ -132,4 +144,72 @@ button:hover{
     align-items: center;
     margin: auto;
     padding-bottom: 24px;
+}
+.goods .pic img{
+    margin: auto;
+    width: 50%;
+    border-radius: 15px;
+}
+.goods:hover{
+    box-shadow: 0px 0px 10px 2px #ddd;
+}
+.name{
+    width: 200px;
+    display: flex;
+    padding-bottom: 28px;
+}
+.name P{
+    color: #FFA015;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 2%;
+}
+.name h4{
+    flex-grow: 1;
+    margin-left: 2%;
+}
+
+/* 近期消息 */
+.item.article{
+    width: 45%;
+    padding-bottom: 10%;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 2px rgb(212, 212, 212), 
+                -1px -1px 5px 2px #fff;
+    border-radius: 15px;
+    transform: translate(0);
+}
+.item.article:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+    cursor: pointer;
+}
+.item.article img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.item .txt{
+    margin: 4% 6%;
+}
+.txt h4{
+    text-align: left;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+.txt p{
+    line-height: 1.7;
+    text-align: left;
+    font-size: 14px;
+    color: #80BC63;
+    padding-bottom: 8px;
+    flex-grow: 1;
+}
+.txt a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #3F6E29;
+    display: inline-block;
 }
