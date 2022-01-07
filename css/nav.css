@@ -9,7 +9,7 @@
     z-index: 99;
 }
 .solidNav {
-    background-color: #aaa;
+    background-color: #3f6e29d7;
     transition: background-color 0.2s linear;
   }
 #menuToggle{
@@ -105,11 +105,6 @@
     padding: 15px 0;
     font-size: 22px;
 }
- 
-
- /*
-  * And let's slide it in from the left
-  */
 #menuToggle input:checked ~ ul{
     transform: none;
 }

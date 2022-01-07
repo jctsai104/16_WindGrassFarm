@@ -1,9 +1,6 @@
+
 .navBar{
-    display: flex;
-    flex-direction: column;
-}
-.navItem{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -11,10 +8,10 @@
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    background-color: #3F6E29;
+    background-color: #3f6e29d7;
 }
 .logo{
-    width: 40%;
+    width: 38%;
     margin: 15px 20px;
 }
 #menuToggle{
@@ -111,10 +108,6 @@
     font-size: 22px;
 }
  
-
- /*
-  * And let's slide it in from the left
-  */
 #menuToggle input:checked ~ ul{
     transform: none;
 }
