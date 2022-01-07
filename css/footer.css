@@ -1,7 +1,8 @@
 .footer {
     background-color: #D0CDC2;
     width: 100%;
-    padding-bottom: 20px;
+    padding-top: 2%;
+    margin-top: 15%;
 }
 .bottom{
     padding-top: 28px;
@@ -39,7 +40,11 @@
     align-items: center;
 }
 .pages li{
-    padding: 6% 6%;   
+    padding: 6% 6%;
+    margin: 2% 0;
+}
+.page li img{
+    width: 68px;
 }
 .pages a{
     text-decoration: none;
@@ -47,8 +52,22 @@
     font-weight: 500;
     font-size: 1.2em;
 }
-
-.copyright a{
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.copyright p{
+    width: 70%;
+    text-align: center;
     display: inline-block;
     color: #666;
+    font-size: 0.8;
+    line-height: 1.5;
+}
+label{
+    margin: 2% 0;
+    padding: 3% 0;
 }

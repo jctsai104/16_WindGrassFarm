@@ -9,7 +9,7 @@
     z-index: 99;
 }
 .solidNav {
-    background-color: #3f6e29d7;
+    background-color: #3f6e29f1;
     transition: background-color 0.2s linear;
   }
 #menuToggle{
@@ -107,4 +107,30 @@
 }
 #menuToggle input:checked ~ ul{
     transform: none;
+}
+
+body{
+    font-family: sans-serif;
+}
+.bgImg{
+    background-image: url(../pic/bg-tomatoes-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height:100vh;
+}
+.logo{
+    width: 40%;
+    margin: 15px 20px;
+}
+
+@media screen and (min-width:992px) {
+    .bgImg{
+        background-image: url(../pic/bg-tomatoes.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        height:100vh;
+    }
 }

@@ -8,10 +8,10 @@
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    background-color: #3f6e29d7;
+    background-color: #3f6e29f1;
 }
 .logo{
-    width: 38%;
+    width: 40%;
     margin: 15px 20px;
 }
 #menuToggle{
