@@ -1,0 +1,264 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+}
+h2{
+    font-size: 3em;
+    color: #80BC63;
+    letter-spacing: 10px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+h3{
+    display: inline-block;
+    font-size: 2em;
+    color: #3F6E29;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+h4{
+    font-size: 1.5em;
+    color: #3F6E29;
+    font-weight: 600;
+}
+p{
+    font-size: 1em;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.mb-90{
+    margin-bottom: 90px;
+}
+.mt-90{
+    margin-top: 90px;
+}
+img{
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+}
+/* banner */
+.banner img{
+    max-width: 100%;
+}
+/* 關於風草+何謂樸門 */
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 60px;
+    margin: 5%;
+}
+
+.sidePic{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidePic img{
+    width: 100%;
+    margin-bottom: 10%;
+}
+.content{
+    width: 50%;
+    margin: 2% 3%;
+}
+.content h3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.txt{
+    display: flex;
+    align-items: center;
+    margin: 2% 3%;
+}
+.txt p {
+    line-height: 1.7;
+    color: #888;
+    text-indent: 20px;
+    letter-spacing: 0.3em;
+}
+.txt p::first-letter{
+    font-size: 180%;
+}
+strong{
+    font-weight: 600;
+    color: #FFA015;
+}
+/* 三大核心 */
+.item{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+}
+.item img{
+    margin-bottom: 25px;
+}
+.item p{
+    text-align: left;
+    font-size: 15px;
+    color: #888;
+    line-height: 1.5;
+}
+/* 里程碑 */
+.goal-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.goal-item:before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #80BC63;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 0;
+    margin: auto;                
+}
+.goal-item:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #80BC63;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;  
+}
+
+.goal-item .picture{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+.picture img {
+    width: 80%;
+    vertical-align: top;
+    border-radius: 50%;
+    border: 7px solid #80BC63;
+}
+
+.goal-item .timing{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+
+.timing{
+    text-align: center;
+}
+
+
+@media screen and (min-width:992px) {
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+    .reverse{
+        flex-direction: row-reverse;
+    }
+    .goal .wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: auto;
+    }
+    /* 里程碑 */
+    .goal-item{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .goal-item:before{
+        content: '';
+        position: absolute;
+        width: 3px;
+        background-color: #80BC63;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;                
+    }
+    .goal-item:after{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #80BC63;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 50%;  
+    }
+    .goal-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    .goal-item .picture{
+        width: 50%;
+        box-sizing: border-box;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .picture img {
+        width: 80%;
+        vertical-align: top;
+        border-radius: 50%;
+        border: 7px solid #80BC63;
+    }
+    .goal-item:nth-child(odd) .picture{
+        padding-right: 20px;
+    }
+    .goal-item:nth-child(even) .picture{
+
+        padding-left: 20px;
+    }
+
+    .goal-item .timing{
+        width: 50%;
+        box-sizing: border-box;
+        padding: 40px 0;
+    }
+    .goal-item:nth-child(odd) .timing{
+        padding-left: 20px;
+    }
+    .goal-item:nth-child(even) .timing{
+        padding-right: 20px;
+    }
+
+    .timing{
+        text-align: center;
+    }
+}

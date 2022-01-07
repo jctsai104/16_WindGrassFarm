@@ -1,5 +1,9 @@
 .navBar{
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+.navItem{
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -7,11 +11,12 @@
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+    background-color: #3F6E29;
 }
-.solidNav {
-    background-color: #aaa;
-    transition: background-color 0.2s linear;
-  }
+.logo{
+    width: 40%;
+    margin: 15px 20px;
+}
 #menuToggle{
     margin: 15px 20px;
     width: 100%;
