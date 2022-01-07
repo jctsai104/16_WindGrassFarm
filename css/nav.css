@@ -13,7 +13,7 @@
     transition: background-color 0.2s linear;
   }
 #menuToggle{
-    margin: 15px 20px;
+    margin: 20px 30px;
     width: 100%;
     display: inline-block; 
     -webkit-user-select: none;
@@ -129,8 +129,11 @@ body{
         background-image: url(../pic/bg-tomatoes.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
         background-attachment: fixed;
         height:100vh;
+    }
+    .logo{
+        width: 12%;
+        margin: 20px 30px;
     }
 }

@@ -60,14 +60,18 @@
     margin-top: 5%;
 }
 .copyright p{
-    width: 70%;
+    width: 85%;
     text-align: center;
     display: inline-block;
     color: #666;
-    font-size: 0.8;
+    font-size: 0.8em;
     line-height: 1.5;
 }
 label{
     margin: 2% 0;
     padding: 3% 0;
+}
+
+@media screen and (min-width:992px) {
+    .footer{}
 }

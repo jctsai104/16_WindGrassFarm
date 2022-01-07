@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: auto;
 }
 .title{
     text-align: center;
@@ -40,9 +41,6 @@ p{
 .pb-40{
     padding-bottom: 40px;
 }
-.pb-60{
-    padding-bottom: 60px;
-}
 .pb-90{
     padding-bottom: 90px;
 }
@@ -66,9 +64,6 @@ img{
 }
 a{
     text-decoration: none;
-}
-.threePoints img{
-    width: 30%;
 }
 
 /* 第一屏 */
@@ -135,6 +130,10 @@ button:hover{
     align-items: center;
     margin: auto;
 }
+.threePoints img{
+    width: 30%;
+}
+
 
 /* 中間banner */
 .banner{
@@ -142,11 +141,16 @@ button:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     min-height:100vh;
 }
 
 /* 推薦商品 */
+.products{
+    background-image: url(../pic/bg-vege-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100vh;
+}
 .goods{
     display: flex;
     flex-direction: column;
@@ -160,13 +164,11 @@ button:hover{
     width: 50%;
     border-radius: 15px;
 }
-.goods:hover{
-    box-shadow: 0px 0px 10px 2px #ddd;
-}
+
 .name{
     width: 200px;
     display: flex;
-    padding-bottom: 28px;
+    margin-top: 3%;
 }
 .name P{
     color: #FFA015;
@@ -216,4 +218,46 @@ button:hover{
     text-decoration: none;
     color: #3F6E29;
     display: inline-block;
+}
+
+@media screen and (min-width:992px) {
+    .width{
+        max-width: 800px;
+    }
+
+    .banner{
+        background-image: url(../pic/corn.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+/* 三大核心 */
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .threePoints img{
+        width: 20%;
+    }
+    
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .width{
+        max-width: 1200px;
+    }
+
+
 }
