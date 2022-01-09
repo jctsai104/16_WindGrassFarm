@@ -6,9 +6,9 @@ $(document).ready(function() {
         var scrollTop = window.pageYOffset || $(window).scrollTop();
 
         if (scrollTop >= height - 100) {
-            $('.navBar').addClass('solidNav');
+            $('.smallScreenNav').addClass('solidNav');
         } else {
-            $('.navBar').removeClass('solidNav');
+            $('.smallScreenNav').removeClass('solidNav');
         }
     });
 });

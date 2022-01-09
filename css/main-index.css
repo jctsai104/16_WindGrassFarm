@@ -104,23 +104,6 @@ a{
     transform: rotate(90deg);
     margin: auto;
 }
-/* button{
-    cursor: pointer;
-    background-color: #FFA015;
-    margin: 8px 0;
-    padding: 8px 20px;
-    border-radius: 300px;
-    border: none;
-    letter-spacing: 2px;
-    transform: translate(0);
-    transition: .3s;
-}
-
-button:hover{
-    background-color: #ffc46c;
-    color: #fff;
-    transform: translate(1px , 2px);
-} */
 
 /* 三大核心 */
 .item{
@@ -134,7 +117,6 @@ button:hover{
     width: 30%;
 }
 
-
 /* 中間banner */
 .banner{
     background-image: url(../pic/corn.jpg);
@@ -145,11 +127,11 @@ button:hover{
 }
 
 /* 推薦商品 */
-.products{
+.productsBg{
     background-image: url(../pic/bg-vege-01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height:100vh;
+    max-height:100vh;
 }
 .goods{
     display: flex;
@@ -183,7 +165,7 @@ button:hover{
 
 /* 近期消息 */
 .item.article{
-    width: 300px;
+    max-width: 300px;
     padding-bottom: 20px;
     background-color: #fff;
     border: 1px  rgb(212, 212, 212) solid;
@@ -224,14 +206,58 @@ button:hover{
     .width{
         max-width: 800px;
     }
-
     .banner{
         background-image: url(../pic/corn.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+        height: 100vh;
     }
-/* 三大核心 */
+    /* 第一屏 */
+    .mainTxt{
+    position: relative;
+    top: 18%;
+    left: -5%;
+    text-align: left;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    }
+    .mainTxt h2{
+    color: #fff;
+    letter-spacing: 3px;
+    opacity: 85%;
+    margin-bottom: 20px;
+    display: inline-block;
+    }
+    .mainTxt p{
+    color: #fff;
+    font-size: 16px;
+    opacity: 85%;
+    display: inline-block;
+    }
+    .mainTxt:after{
+    content: '';
+    display: none;
+    }
+    .mainTxt button{
+    cursor: pointer;
+    background-color: #FFA015;
+    margin: 20% 0;
+    padding: 8px 20px;
+    border-radius: 300px;
+    border: none;
+    letter-spacing: 0.2em;
+    transform: translate(0);
+    transition: .3s;
+    }
+    .mainTxt button:hover{
+    background-color: #ededed;
+    color: #80BC63;
+    transform: translate(1px , 2px);
+    }
+    /* 三大核心 */
     .wrap{
         display: flex;
         flex-direction: row;
@@ -249,15 +275,22 @@ button:hover{
     .threePoints img{
         width: 20%;
     }
-    
+    /* 近期消息 */
+    .news .item{
+        margin: 0 5%;
+        box-sizing: border-box  ;
+    }
 }
-
-
 
 @media screen and (min-width:1200px) {
     .width{
         max-width: 1200px;
     }
-
-
+    .banner{
+        background-image: url(../pic/corn.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+    }
 }

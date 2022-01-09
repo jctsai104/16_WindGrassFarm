@@ -1,3 +1,6 @@
+body{
+    font-family: sans-serif;
+}
 .center{
     display: flex;
     justify-content: center;
@@ -6,6 +9,14 @@
 }
 .title{
     text-align: center;
+}
+h1{
+    font-size: 3em;
+    color: #80BC63;
+    letter-spacing: 10px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 h2{
     font-size: 2em;
@@ -51,8 +62,56 @@ a{
     text-decoration: none;
 }
 /* banner */
-.banner img{
-    max-width: 100%;
+.smallScreen{
+    background-image: url(../pic/banner-carrot2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.bigScreen{
+    display: none;
+}
+/* path麵包屑 */
+.path{
+    margin: 15px 10px 15px 0;
+}
+.path ul{
+    list-style: none;
+    display: flex;
+}
+.path li{
+    position: relative;
+    padding: 10px;
+}
+.path li a{
+    color: #3F6E29;
+    font-size: 1em;
+}
+.path a::after{
+    display: block;
+    content: '';
+    width: 0%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #3F6E29;
+    transition: 0.4s ease-in-out;
+}
+.path a:hover:after{
+    width: 100%;
+    height: 2px;
+    margin-bottom: 5px;
+}
+
+.path span{
+    color: #FFA015;
+    font-weight: 700;
+}
+.path li + li::before{
+    content: '/';
+    color: #D0CDC2;
+    position: absolute;
+    left: 0;
 }
 /* 關於風草+何謂樸門 */
 .wrap{
@@ -80,12 +139,10 @@ a{
 .content h3{
     display: flex;
     justify-content: center;
-    padding: 3% 0;
 }
 .txt{
     display: flex;
     align-items: center;
-    margin: 2% 3%;
 }
 .txt p {
     line-height: 1.7;
@@ -179,6 +236,10 @@ strong{
 
 
 @media screen and (min-width:992px) {
+    .width{
+        max-width: 800px;
+        margin: auto;
+    }
     .wrap{
         display: flex;
         flex-direction: row;
@@ -189,6 +250,22 @@ strong{
     .reverse{
         flex-direction: row-reverse;
     }
+    /* banner */
+    .banner img{
+        max-width: 100%;
+    }
+    .bigScreen{
+        display: block;
+        background-image: url(../pic/banner-carrot.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 40vh;
+    }
+    .smallScreen{
+        display: none;
+    }
+    /* 里程碑 */
     .goal .wrap{
         display: flex;
         flex-direction: column;
@@ -196,7 +273,6 @@ strong{
         align-items: center;
         margin: auto;
     }
-    /* 里程碑 */
     .goal-item{
         display: flex;
         align-items: center;
@@ -264,5 +340,11 @@ strong{
 
     .timing{
         text-align: center;
+    }
+}
+@media screen and (min-width:1200px) {
+    .width{
+        max-width: 1200px;
+        margin: auto;
     }
 }

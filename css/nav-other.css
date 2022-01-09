@@ -1,5 +1,7 @@
-
-.navBar{
+.bigScreenNav{
+    display: none;
+}
+.smallScreenNav{
     position: fixed;
     top: 0;
     left: 0;
@@ -8,18 +10,23 @@
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+    background-color: transparent;
+}
+.bgNav{
     background-color: #3f6e29f1;
+    transition: .5s;
 }
 .logo{
     width: 40%;
-    margin: 15px 20px;
+    margin: 2% 4%;
 }
 #menuToggle{
-    margin: 15px 20px;
+    margin: 2% 4%;
     width: 100%;
     display: inline-block; 
     -webkit-user-select: none;
     user-select: none;
+    position: relative;
 }
  
 #menuToggle a{
@@ -34,11 +41,11 @@
  
 #menuToggle input{
     display: block;
-    width: 40px;
-    height: 32px;
+    width: 10%;
+    height: 100%;
     position: absolute;
-    top: -5px;
-    left: -7px;
+    top: 0;
+    left: 0;
     cursor: pointer;
     opacity: 0; 
     z-index: 2; 
@@ -110,4 +117,101 @@
  
 #menuToggle input:checked ~ ul{
     transform: none;
+}
+
+/* banner */
+.smallScreen{
+    background-image: url(../pic/banner-carrot2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.bigScreen{
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+    #menuToggle{
+        margin: 2% 3%;
+    }
+    .logo{
+        width: 12%;
+        margin: 2% 3%;
+    }
+    .smallScreenNav{
+        display: none;
+    }
+    .bigScreenNav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        z-index: 99;
+        background-color: #bdbdbd41;
+    }
+    .bgNav{
+        background-color: #3f6e29f1;
+        transition: .5s;
+    }
+    .bigScreenNav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 800px;
+        margin: auto;
+    }
+    .bigScreenNav li{
+        font-weight: 700;
+        position: relative;
+    }
+    .bigScreenNav a{
+        padding: 20px 15px;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 3px;
+    }
+    .bigScreenNav a li::after {
+        position: absolute;
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        left: 50%;
+        bottom: -10px;
+        transition: all 0.4s ease-in-out;
+    }
+    .bigScreenNav a:hover li::after {
+        width: 100%;
+        left: 0;
+    }
+    .bigScreenNav a span:hover li:after{
+        display: none;
+    }
+    /* banner */
+    .banner img{
+        max-width: 100%;
+    }
+    .bigScreen{
+        display: block;
+        background-image: url(../pic/banner-carrot.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 40vh;
+    }
+    .smallScreen{
+        display: none;
+    }
+}
+@media screen and (min-width:1200px) {
+    .bigScreenNav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1200px;
+        margin: auto;
+    }
+
 }

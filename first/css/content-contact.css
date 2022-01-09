@@ -51,15 +51,13 @@ h3{
     line-height: 1.2;
     margin-bottom: 10px;
 }
-.pic{
-    vertical-align: middle;
+.icon{
+    display: block;
     margin-right: 10px;
     margin-bottom: 10px;
 }
-.leftPic img{
-    display: flex;
+.socialMedia{
     justify-content: center;
-    margin: auto;
 }
 .socialMedia img{
     margin: 30px 10px 0px 0px;
