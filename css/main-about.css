@@ -43,6 +43,9 @@ h4{
 p{
     font-size: 1em;
 }
+.pb-60{
+    padding-bottom: 60px;
+}
 .mb-40{
     margin-bottom: 40px;
 }
@@ -114,36 +117,24 @@ a{
     left: 0;
 }
 /* 關於風草+何謂樸門 */
-.wrap{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 60px;
-}
 
 .sidePic{
-    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2%;
 }
 .sidePic img{
     width: 100%;
 }
-.content{
-    width: 60%;
-    margin: 2% 3%;
-}
+
 .content h3{
     display: flex;
     justify-content: center;
 }
-.txt{
+/* .txt{
     display: flex;
     align-items: center;
-}
+} */
 .txt p {
     line-height: 1.7;
     color: #888;
@@ -256,7 +247,7 @@ strong{
     }
     .bigScreen{
         display: block;
-        background-image: url(../pic/banner-carrot.jpg);
+        background-image: url(../pic/banner-oranges.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;

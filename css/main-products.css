@@ -32,7 +32,7 @@ h3{
     color: #3F6E29;
     letter-spacing: 3px;
     font-weight: 600;
-    line-height: 1.5;
+    margin: 6% 0;
 }
 h4{
     font-size: 1.1em;
@@ -43,17 +43,38 @@ h4{
 p{
     font-size: 1em;
 }
-.mb-20{
-    margin-bottom: 20px;
+.pb-60{
+    padding-bottom: 60px;
 }
-
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.mb-90{
+    margin-bottom: 90px;
+}
+.mt-90{
+    margin-top: 90px;
+}
 img{
     vertical-align: top;
 }
 a{
     text-decoration: none;
 }
-
+/* banner */
+.smallScreen{
+    background-image: url(../pic/banner-carrot2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.bigScreen{
+    display: none;
+}
 /* path麵包屑 */
 .path{
     margin: 15px 10px 15px 0;
@@ -95,115 +116,23 @@ a{
     position: absolute;
     left: 0;
 }
-/* 聯絡我們 */
-
-/* 表單 */
-form, .writing{
-    display: flex;
-    flex-direction: column;
-}
-.writing{
-    align-items: flex-end;
-    margin-bottom: 4%;
-}
-form label, input{
-    margin: 2% 0;
-}
-form > p{
-    text-align: left;
-    margin-bottom: 2%;
-}
-input{
-    border-radius: 10px;
-    border: 1px solid #80BC63;
-    margin:5px;
-    padding: 2px;
-}
-input:focus{
-    outline:none;
-    background-color: #81bc63a1;
-}
-textarea:focus{
-    outline:none;
-    background-color: #81bc63a1;
-}
-textarea{
-    margin: 2% 0;
-    height: 100px;
-    border: 1px solid #80BC63;
-    resize: none;
-    border-radius: 10px;
-}
-/* input::placeholder{
-    color: #81bc63;
-    font-size: 1em;
-    transform: translate(5px,-35px);
-} */
-.btns{
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-}
-.btn{
-    padding: 5px 15px;
-    border-radius: 300px;
-    border: none;
-}
-.btn:nth-child(1){
-    color: #fff;
-    background-color: #FFA015;
-}
-.btn:nth-child(2){
-    color: #666;
-    background-color: #ccc;
-}
 
 
 
-/* 社群 */
-
-.item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2%;
-}
-.wrap .item p {
-    margin-left: 3%;
-    line-height: 1.2;
-
-    display: inline-block;
-}
-.icon img{
-    margin-right: 2%;
-}
-
-.socialMedia img{
-    transform: translateY(0);
-}
-
-.socialMedia img:hover{
-    transform: translateY(-3px);
-    transition: .5s;
-}
-
-/* 地圖 */
-.info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3%;
-}
-.info .item{
-    text-align: left;
-}
-.pic img{
-    width: 100%;
-}
 @media screen and (min-width:992px) {
     .width{
         max-width: 800px;
         margin: auto;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+    .reverse{
+        flex-direction: row-reverse;
     }
     /* banner */
     .banner img{
@@ -211,7 +140,7 @@ textarea{
     }
     .bigScreen{
         display: block;
-        background-image: url(../pic/banner-sunset.jpg);
+        background-image: url(../pic/banner-products.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -219,15 +148,6 @@ textarea{
     }
     .smallScreen{
         display: none;
-    }
-
-    .wrap{
-        display: flex;
-        flex-direction: column;
-    }
-    .pic img{
-        width: 80%;
-        transform: translate(12.5%, 0);
     }
     
 }
