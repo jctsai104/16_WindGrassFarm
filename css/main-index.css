@@ -67,29 +67,36 @@ a{
 }
 
 /* 第一屏 */
-.mainTxt{
+.mainTxt .first{
     margin: auto;
     position: relative;
-    top: 300px;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,75%);
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-.mainTxt h2{
+.mainTxt .first h2{
     color: #fff;
     letter-spacing: 3px;
     opacity: 85%;
     margin-bottom: 20px;
     display: inline-block;
 }
-.mainTxt p{
+.mainTxt .first p{
     color: #fff;
     font-size: 16px;
     opacity: 85%;
     display: inline-block;
 }
 
-.mainTxt button{
+.mainTxt .first button{
+    display: none;
+}
+
+.mainTxt .socialMedia{
     display: none;
 }
 
@@ -205,48 +212,41 @@ a{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 10%;
-        left: -16%;
+        top: 20%;
+        left: 10%;
     }
     .mainTxt .socialMedia a{
-        margin: 6% 0;
         transform: translateY(0);
+        width: 32px;
     }
     .mainTxt .socialMedia a:hover{
         transform: translateY(-5px);
         transition: .5s;
     }
-    .mainTxt{
-        position: relative;
-        top: 15%;
-        left: -5%;
-        text-align: left;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 50%;
-    }
-    .mainTxt h2{
+
+    .mainTxt .first h2{
         color: #fff;
         letter-spacing: 3px;
         opacity: 85%;
         margin-bottom: 20px;
         display: inline-block;
     }
-    .mainTxt p{
+    .mainTxt .first p{
         color: #fff;
         font-size: 16px;
         opacity: 85%;
         display: inline-block;
     }
-    .first{
-        display: flex;
-        flex-direction: column;
+    .mainTxt .first{
+        position: relative;
+        top: 100px;
+        left: -5%;
+        text-align: left;
+        align-items: flex-start;
+        width: 50%;
+        transform: translate(0,0);
     }
-    .first img{
-        transform: translate(-37.5%,0);
-    }
-    .mainTxt:after{
+    /* .mainTxt:after{
         content: '';
         background: #fff;
         height: 1px;
@@ -256,11 +256,12 @@ a{
         left: -50%;
         transform: rotate(90deg);
         margin: auto;
-    }
-    .mainTxt button{
+    } */
+    .mainTxt .first button{
         display: block;
         cursor: pointer;
         background-color: #FFA015;
+        color: #fff;
         margin-top: 8%;
         padding: 8px 20px;
         border-radius: 300px;

@@ -119,17 +119,7 @@
     transform: none;
 }
 
-/* banner */
-.smallScreen{
-    background-image: url(../pic/banner-carrot2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-}
-.bigScreen{
-    display: none;
-}
+
 
 @media screen and (min-width:992px) {
     #menuToggle{
@@ -189,21 +179,7 @@
     .bigScreenNav a span:hover li:after{
         display: none;
     }
-    /* banner */
-    .banner img{
-        max-width: 100%;
-    }
-    .bigScreen{
-        display: block;
-        background-image: url(../pic/banner-carrot.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 40vh;
-    }
-    .smallScreen{
-        display: none;
-    }
+    
 }
 @media screen and (min-width:1200px) {
     .bigScreenNav ul{
