@@ -1,6 +1,9 @@
 body{
     font-family: sans-serif;
 }
+main{
+    padding-bottom: 6%;
+}
 .center{
     display: flex;
     justify-content: center;
@@ -116,11 +119,10 @@ a{
     left: 0;
 }
 /* 文章卡片 */
-.article{
+article{
     padding: 3%;
     margin: 3%;
     border-radius: 10px;
-    margin-bottom: 20px;
     box-shadow: 0px 0px 10px 2px #eee;
     cursor: pointer;
     display: flex;
@@ -133,20 +135,23 @@ a{
     width: 100%;
     border-radius: 10px;
 }
-/* .col-12 , .col-lg-12{
-    box-sizing: content-box;
-} */
-.article:hover{
+article:hover{
     box-shadow: 0px 0px 10px 2px #ccc;
 }
 .txt{
     padding: 2%;
     margin: 5%;
 }
-.txt p{
+.txt p, .news a{
     font-size: 16px;
     line-height: 1.5;
     color: #666;
+}
+.txt h3:hover{
+    color: #FFA015;
+}
+.news p:hover {
+    color: #aaa;
 }
 .date{
     display: flex;
@@ -225,11 +230,8 @@ button:active{
         display: none;
     }
     /* 文章卡片 */
-    .article{
-        padding: 1%;
-        margin: 3%;
+    article{
         border-radius: 10px;
-        margin-bottom: 3%;
         box-shadow: 0px 0px 10px 2px #eee;
         cursor: pointer;
         display: flex;
@@ -238,7 +240,7 @@ button:active{
         align-items: center;
     }
 
-    .article:hover{
+    article:hover{
         box-shadow: 0px 0px 10px 2px #ccc;
     }
     .txt{

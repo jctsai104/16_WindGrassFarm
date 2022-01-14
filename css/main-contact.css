@@ -1,6 +1,9 @@
 body{
     font-family: sans-serif;
 }
+main{
+    padding-bottom: 10%;
+}
 .center{
     display: flex;
     justify-content: center;

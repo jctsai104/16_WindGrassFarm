@@ -2,7 +2,6 @@
     background-color: #D0CDC2;
     width: 100%;
     padding-top: 2%;
-    margin-top: 15%;
 }
 
 /* icon */
@@ -95,13 +94,6 @@
 }
 
 @media screen and (min-width:992px) {
-.footer {
-    background-color: #D0CDC2;
-    width: 100%;
-    padding-top: 1%;
-    margin-top: 10%;
-}
-
 /* icon */
 .socialMedia{   
     width: 30%;

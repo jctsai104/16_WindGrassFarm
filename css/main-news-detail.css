@@ -1,6 +1,9 @@
 body{
     font-family: sans-serif;
 }
+main{
+    padding-bottom: 10%;
+}
 .center{
     display: flex;
     justify-content: center;
@@ -19,20 +22,19 @@ h1{
     margin-top: 60px;
 }
 h2{
-    font-size: 2em;
-    color: #80BC63;
-    letter-spacing: 10px;
+    font-size: 1.8em;
+    color: #3F6E29;
+    letter-spacing: 3px;
     font-weight: bold;
-    margin-bottom: 60px;
-    margin-top: 60px;
 }
 h3{
     display: inline-block;
     font-size: 1.5em;
-    color: #3F6E29;
+    color: #80BC63;
     letter-spacing: 3px;
     font-weight: 600;
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 h4{
     font-size: 1.1em;
@@ -40,20 +42,14 @@ h4{
     font-weight: 600;
     margin-bottom: 7%;
 }
-p{
-    font-size: 1em;
-}
 .mb-40{
     margin-bottom: 40px;
 }
 .mb-60{
     margin-bottom: 60px;
 }
-.mb-90{
-    margin-bottom: 90px;
-}
-.mt-90{
-    margin-top: 90px;
+.m-20{
+    margin: 20px 0;
 }
 img{
     vertical-align: top;
@@ -108,6 +104,7 @@ a{
 .path span{
     color: #FFA015;
     font-weight: 700;
+    font-size: 0.9em;
 }
 .path li + li::before{
     content: '/';
@@ -116,77 +113,53 @@ a{
     left: 0;
 }
 /* 文章卡片 */
-.article{
-    padding: 3%;
-    margin: 3%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px 2px #eee;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
+article{
+    display: block;
     justify-content: center;
     align-items: center;
 }
 
 .pic img{
     width: 100%;
-    border-radius: 10px;
 }
 
 .txt{
     padding: 2%;
-    margin: 5%;
+    margin: 5% 5% 0 5%;
 }
 .txt p{
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 1em;
+    line-height: 1.6;
+    letter-spacing: 1px;
     color: #666;
+    margin: 10px;
+}
+.txt .articleImg{
+    width: 100%;
+    margin: 20px 0;
 }
 .date{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
+
 .date h5{
     margin-left: 2%;
 }
 .readMore{
     vertical-align: top;
 }
-/* 頁碼 */
-.articlePages{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+
+/* 推薦文章 */
+.recommend{
+    padding-top: 40px;
 }
-.arrow{
-    margin: 10px;
-    color: #ccc;
-    cursor: pointer;
-    font-size: 2em;
-}
-.arrow:hover{
-    color: #FFA015;
-}
-button{
-    margin: 10px;
-    background-color: transparent;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px #ccc solid;
-    color: #999;
-    transition: .3s;
+.recommendCard{
     cursor: pointer;
 }
-button:hover{
+.recommendCard .txtTitle:hover{
     color: #FFA015;
-}
-button:active{
-    border: 1px #aaa solid;
-    color: #aaa;
-    transform: translate(1px,1px);
 }
 
 @media screen and (min-width:992px) {

@@ -1,6 +1,9 @@
 body{
     font-family: sans-serif;
 }
+main{
+    padding-bottom: 12%;
+}
 .center{
     display: flex;
     justify-content: center;
@@ -116,8 +119,72 @@ a{
     position: absolute;
     left: 0;
 }
+/* 分類目錄 */
+.iconList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5%;
+}
+.iconList img{
+    width: 80px;
+    margin: 0 20px;
+}
+.iconList .btn{
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #FFA015;
+    border-radius: 300px;
+    color: #FFA015;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+/* .iconList .btn:hover{
+    background-color: #FFA015;
+    color: #fff;
+} */
+.btnClick{
+    background-color: #FFA015;
+}
+/* 商品卡片 */
+.products{
+    padding: 5% 0;
+}
+.card{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0.1rem 0.3rem 0 rgb(0 0 0 / 10%);
+}
+.productsCard img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.productsTitle{
+    padding-top: 2%;
+}
+.productsTitle p{
+    color: #666;
+    font-size: 1.3em;
+    padding: 5%;
+    text-align: center;
+}
+.productsTitle p span{
+    color: #FFA015;
+    font-weight: 700;
+}
+/* 商品描述 */
+.bigSize{
+    display: none;
+}
 
-
+@media screen and (max-width:767px) {
+    .card{
+        box-shadow: 0 0.1rem 0.3rem 0 rgb(0 0 0 / 12%);
+    }
+}
 
 @media screen and (min-width:992px) {
     .width{
@@ -149,7 +216,30 @@ a{
     .smallScreen{
         display: none;
     }
-    
+    /* 商品卡片 */
+    .card{
+        transform: translateY(0);
+        transition: .5s;
+    }
+    .card:hover{
+        box-shadow: 0 0.1rem 0.3rem 0 rgb(0 0 0 / 15%);
+        transform: translateY(-4px);
+    }
+    /* 商品描述 */
+    .mobile{
+        display: none;
+    }
+    .bigSize{
+        display: block;
+    }
+
+    .lg img{
+        width: 500px;
+    }
+    .sm img{
+        width: 80px;
+        margin: 20px 10px 10px 0px;
+    }
 }
 @media screen and (min-width:1200px) {
     .width{
