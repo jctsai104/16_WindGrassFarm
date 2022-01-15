@@ -247,6 +247,7 @@ textarea{
         align-items: center;
         justify-content: center;
         transform: translate(0, 12.5%);
+    }
 }
 @media screen and (min-width:1200px) {
     .width{

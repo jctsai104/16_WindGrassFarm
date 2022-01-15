@@ -131,10 +131,12 @@ a{
     justify-content: center;
     align-items: center;
     list-style: none;
+    flex-wrap: wrap;
+
 }
 .list li{
     margin: 2%;
-    padding: 20px 30px;
+    padding: 15px 25px;
     text-align: center;
     background-color: #fefff6;
     border: 1px solid #90c57c;
@@ -169,7 +171,8 @@ a{
 }
 .productsTitle p{
     color: #666;
-    font-size: 1.3em;
+    font-size: 1em;
+    letter-spacing: 1px;
     padding: 5%;
     text-align: center;
 }
