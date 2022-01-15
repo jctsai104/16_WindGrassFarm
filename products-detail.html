@@ -14,13 +14,15 @@
     <link rel="stylesheet" href="css/footer.css">
     
     <script src="js/smoothscroll.min.js"></script>
+    <script defer src="js/picChange.js"></script>
+    <script defer src="js/prodList_cart.js"></script>
     <link rel="icon" href="pic/littleicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="bgImg">
             <!-- 手機的導覽列 -->
-            <div class="smallScreenNav">
+            <div class="smallScreenNav greenNav">
                 <nav role="navigation" id="menuToggle">
                     <input type="checkbox">
                     <span></span>
@@ -55,14 +57,12 @@
             </nav>
     </header>
     <main>
-        <!-- 手機banner -->
-        <div class="smallScreen Banner"></div>
         <!-- 平桌banner -->
         <div class="bigScreen Banner"></div>
         <!-- 主版面 --> 
         <div class="width">
             <!-- 麵包屑 -->
-            <div class="path">
+            <div class="path pt-80">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
@@ -70,34 +70,148 @@
                 </ul>
             </div>
         </div>
-        <!-- 商品描述 -->
-        <section class="container mobile">
-            <div class="row">
-                <div class="col-12">
-                    <div class="owl-carousel owl-theme ">
-                        <img src="pic/product_corrot.png" alt="有機紅蘿蔔">
-                        <img src="pic/product_corrot_box.jpg" alt="有機紅蘿蔔">
-                        <img src="pic/product_corrot_juice.jpg" alt="有機紅蘿蔔">
-                        <img src="pic/product_corrot_sun.jpg" alt="有機紅蘿蔔">
-                        <img src="pic/product_corrot_teeth.jpg" alt="有機紅蘿蔔">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container bigSize">
+        <!-- 圖 -->
+        <section class="container bigSize width">
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="lg">
                        <img src="pic/product_corrot.png" id="lg" alt="有機紅蘿蔔"> 
                     </div>
                     <div class="sm">
+                        <img src="pic/product_corrot.png" id="lg" alt="有機紅蘿蔔"> 
                         <img src="pic/product_corrot_box.jpg" id="sm" alt="有機紅蘿蔔">
                         <img src="pic/product_corrot_juice.jpg" id="sm" alt="有機紅蘿蔔">
                         <img src="pic/product_corrot_sun.jpg" id="sm" alt="有機紅蘿蔔">
                         <img src="pic/product_corrot_teeth.jpg" id="sm" alt="有機紅蘿蔔">
                     </div>
                 </div>
+                <!-- 商品敘述 -->
+                <div class="sider col-12 col-lg-6">
+                    <div class="description">
+                        <h3>有機紅蘿蔔</h3>
+                        <h4>具高含量的纖維素及硒元素，並有富含蛋白質、脂肪、碳水化合物、胡蘿蔔素，和維他命B1、B2、B6、C等，同時也含有鈣、磷、鐵、鉀、鈉、菸鹼酸及草酸等豐富礦物質。</h4>
+                        <ul>
+                            <li>有機無農藥，讓您吃的安心</li>
+                            <li>鮮甜無腥味，小孩大人都喜歡</li>
+                            <li>產地嚴選，自產自銷</li>
+                        </ul>
+                        <hr>
+                        <ol>
+                            <li>商品規格：600g(±10%)/袋</li>
+                            <li>商品重(容)量：600g (±10%) 約2-4入</li>
+                            <li>食品添加物：無</li>
+                            <li>產地：台灣</li>
+                            <li>食品業者登錄字號：F-183688119-00000-7</li>
+                            <li>投保產品責任險字號：0524字第20AML0000354號</li>
+                            <li>注意事項：收到商品後，請即刻冰至冰箱，避免商品腐敗。</li>
+                        </ol>
+                    </div>
+                    <!-- 購買按鍵區 -->
+                    <div class="buy">
+                        <div class="price">
+                            <span>$28</span>
+                        </div>
+                        <div class="">
+                            <input type="button" class="btnMinus" value="-">
+                            <input type="text" class="qtyBox" name="qty" value="0">
+                            <input type="button" class="btnPlus" value="+">
+                        </div>
+                        <div class="addCart">
+                            <input type="submit" class="add" value="加入購物車">
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="hr mtb-50 center">
+                <img src="pic/hr-03.png" alt="分隔線">
+            </div>
+        </section>
+        <!-- 猜你喜歡 -->
+        <section class="guess container width">
+            <h3 class="centerMobile mtb-50">猜你喜歡</h3>
+            <div class="row">
+                <div class="like col-6 col-lg-3">
+                    <div class="pic">
+                        <img src="pic/product_vegebox_sm.jpg" alt="防疫營養蔬菜箱"> 
+                     </div>
+                     <div class="productsTitle">
+                         <p>防疫營養蔬菜箱</p>
+                         <p><span>$319</span></p>
+                     </div>
+                </div>
+                <div class="like col-6 col-lg-3">
+                    <div class="pic">
+                        <img src="pic/product_tomato.jpg" alt="鮮採牛番茄"> 
+                    </div>
+                    <div class="productsTitle">
+                        <p>鮮採牛番茄</p>
+                        <p><span>$50</span></p>
+                    </div>
+                </div>
+                <div class="like col-6 col-lg-3">
+                    <div class="pic">
+                        <img src="pic/appetite.jpg" alt="無農藥青花菜"> 
+                    </div>
+                    <div class="productsTitle">
+                        <p>無農藥青花菜</p>
+                        <p><span>$59</span></p>
+                    </div>
+                </div>
+                <div class="like col-6 col-lg-3">
+                    <div class="pic">
+                        <img src="pic/potatoes.jpg" alt="國產馬鈴薯"> 
+                    </div>
+                    <div class="productsTitle">
+                        <p>國產馬鈴薯</p>
+                        <p><span>$42</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hr mtb-50 center">
+                <img src="pic/hr-03.png" alt="分隔線">
+            </div>    
+        </section>
+        <!-- 最近瀏覽 -->
+        <section class="view container width">
+            <h3 class="centerMobile mtb-50">最近瀏覽過</h3>
+            <div class="row">
+                <div class="like col-6 col-lg-3">
+                    <div class="pic">
+                        <img src="pic/redjam.jpg" alt="洛神花果醬">
+                    </div>
+                    <div class="productsTitle">
+                        <p>洛神花果醬</p>
+                        <p><span>$180</span></p>
+                    </div>
+                </div>
+                <div class="like col-6 col-lg-3">
+                    <div class="pic">
+                        <img src="pic/pumpkin.jpg" alt="在地大南瓜"> 
+                    </div>
+                    <div class="productsTitle">
+                        <p>在地大南瓜</p>
+                        <p><span>$79</span></p>
+                    </div>
+                </div>
+                <div class="like col-6 col-lg-3">
+                    <div class="pic">
+                        <img src="pic/ginger.jpg" alt="有機乾薑"> 
+                     </div>
+                     <div class="productsTitle">
+                        <p>有機乾薑</p>
+                        <p><span>$39</span></p>
+                    </div>
+                </div>
+                <div class="like col-6 col-lg-3">
+                    <div class="pic">
+                        <img src="pic/bokchoy.png" alt="有機青江菜"> 
+                    </div>
+                    <div class="productsTitle">
+                        <p>有機青江菜</p>
+                        <p><span>$23</span></p>
+                    </div>
+                </div>
+            </div>    
         </section>
     </main>
     <footer>
@@ -132,31 +246,17 @@
     <script src="js/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function(){
-            $(".owl-carousel").owlCarousel(
-                {
-                    loop:true,
-                    margin:10,
-                    responsiveClass:true,
-                    dots: true,
-                    responsive:{
-                        0:{
-                            items:1,
-                            nav:false
-                        },
-                    }
-                }
-            );
             $(window).scroll(function() {
 
-            var smallHeight = $('.smallScreen').height();
+            // var smallHeight = $('.smallScreen').height();
             var bigHeight = $('.bigScreen').height();
             var scrollTop = window.pageYOffset || $(window).scrollTop();
 
-            if (scrollTop >= smallHeight - 300) {
-                $('.smallScreenNav').addClass('bgNav');
-            } else {
-                $('.smallScreenNav').removeClass('bgNav');
-            }
+            // if (scrollTop >= smallHeight - 300) {
+            //     $('.smallScreenNav').addClass('bgNav');
+            // } else {
+            //     $('.smallScreenNav').removeClass('bgNav');
+            // }
 
             if (scrollTop >= bigHeight - 100) {
                 $('.bigScreenNav').addClass('bgNav');

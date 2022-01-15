@@ -5,6 +5,12 @@
     flex-direction: column;
     margin: auto;
 }
+body{
+    font-family: sans-serif;
+}
+main{
+    padding-bottom: 12%;
+}
 .title{
     text-align: center;
 }
@@ -198,6 +204,10 @@ a{
 }
 
 @media screen and (min-width:992px) {
+
+    main{
+        padding-bottom: 6%;
+    }
     .width{
         max-width: 800px;
     }
@@ -212,8 +222,8 @@ a{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 20%;
-        left: 10%;
+        top: 35%;
+        left: 12%;
     }
     .mainTxt .socialMedia a{
         transform: translateY(0);
@@ -238,31 +248,20 @@ a{
         display: inline-block;
     }
     .mainTxt .first{
-        position: relative;
-        top: 100px;
-        left: -5%;
+        position: absolute;
+        top: 50%;
+        left: 40%;
         text-align: left;
         align-items: flex-start;
         width: 50%;
-        transform: translate(0,0);
+        transform: translate(-40%,-40%);
     }
-    /* .mainTxt:after{
-        content: '';
-        background: #fff;
-        height: 1px;
-        width: 150px;
-        position: relative;
-        bottom: -100px;
-        left: -50%;
-        transform: rotate(90deg);
-        margin: auto;
-    } */
     .mainTxt .first button{
         display: block;
         cursor: pointer;
         background-color: #FFA015;
         color: #fff;
-        margin-top: 8%;
+        margin-top: 50%;
         padding: 8px 20px;
         border-radius: 300px;
         border: none;

@@ -14,7 +14,7 @@ main{
     text-align: center;
 }
 h1{
-    font-size: 3em;
+    font-size: 2.6em;
     color: #80BC63;
     letter-spacing: 10px;
     font-weight: bold;
@@ -111,7 +111,6 @@ a{
     left: 0;
 }
 /* 聯絡我們 */
-
 /* 表單 */
 form, .writing{
     display: flex;
@@ -244,7 +243,10 @@ textarea{
         width: 80%;
         transform: translate(12.5%, 0);
     }
-    
+    .align-center {
+        align-items: center;
+        justify-content: center;
+        transform: translate(0, 12.5%);
 }
 @media screen and (min-width:1200px) {
     .width{

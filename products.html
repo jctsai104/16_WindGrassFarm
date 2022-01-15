@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/nav-other.css">
     <link rel="stylesheet" href="css/main-products.css">
     <link rel="stylesheet" href="css/footer.css">
+    <!-- <script defer src="js/btn_checked.js"></script> -->
     <script src="js/smoothscroll.min.js"></script>
     <link rel="icon" href="pic/littleicon.ico" type="image/x-icon">
 </head>
@@ -69,21 +70,13 @@
         <!-- 主標 -->
         <h1 class="center">線上訂購</h1>
         <!-- 分類目錄 -->
-        <section class="catalog container width">
-            <div class="row">
-                <div class="iconList col-6 col-lg-3">
-                    <input type="button" class="btn"  value="蔬果">
-                </div>
-                <div class="iconList col-6 col-lg-3">
-                    <input type="button" class="btn"  value="農產品">
-                </div>
-                <div class="iconList col-6 col-lg-3">
-                    <input type="button" class="btn"  value="果醬">
-                </div>
-                <div class="iconList col-6 col-lg-3">
-                    <input type="button" class="btn"  value="禮盒">
-                </div>
-            </div>
+        <section class="catalog width">
+            <ul class="list">
+                <li>蔬果</li>
+                <li>農產品</li>
+                <li>果醬</li>
+                <li>禮盒</li>
+            </ul>
         </section>
         <section class="produts" id="vegetablePage">
             <div class="container width">
@@ -134,6 +127,51 @@
                             </div>
                         </div>
                     </div>
+                    <div class="productsCard col-6 col-lg-3">
+                        <div class="card">
+                            <div class="pic">
+                                <img src="pic/appetite.jpg" alt="無農藥青花菜"> 
+                            </div>
+                            <div class="productsTitle">
+                                <p>無農藥青花菜</p>
+                                <p><span>$59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsCard col-6 col-lg-3">
+                        <div class="card">
+                            <div class="pic">
+                                <img src="pic/pumpkin.jpg" alt="在地大南瓜"> 
+                            </div>
+                            <div class="productsTitle">
+                                <p>在地大南瓜</p>
+                                <p><span>$79</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsCard col-6 col-lg-3">
+                        <div class="card">
+                            <div class="pic">
+                                <img src="pic/bokchoy.png" alt="有機青江菜"> 
+                            </div>
+                            <div class="productsTitle">
+                                <p>有機青江菜</p>
+                                <p><span>$23</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsCard col-6 col-lg-3">
+                        <div class="card">
+                            <div class="pic">
+                                <img src="pic/potatoes.jpg" alt="國產馬鈴薯"> 
+                            </div>
+                            <div class="productsTitle">
+                                <p>國產馬鈴薯</p>
+                                <p><span>$42</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -144,49 +182,57 @@
                         <a href="products-detail.html">
                             <div class="card">
                                 <div class="pic">
-                                    <img src="pic/product_corrot.png" alt="有機紅蘿蔔">
+                                    <img src="pic/redjam.jpg" alt="洛神花果醬">
                                 </div>
-                            <div class="productsTitle">
-                                <p>洛神花果醬</p>
-                                <p><span>$28</span></p>
-                            </div>
+                                <div class="productsTitle">
+                                    <p>洛神花果醬</p>
+                                    <p><span>$180</span></p>
+                                </div>
                         </div>
                         </a>
                     </div>
                     <div class="productsCard col-6 col-lg-3">
                         <div class="card">
                             <div class="pic">
-                               <img src="pic/product_tomato.jpg" alt="鮮採牛番茄"> 
-                            </div>
-                            <div class="productsTitle">
-                                <p>橘子果醬</p>
-                                <p><span>$50</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="productsCard col-6 col-lg-3">
-                        <div class="card">
-                            <div class="pic">
-                               <img src="pic/ginger.jpg" alt="有機乾薑"> 
-                            </div>
-                            <div class="productsTitle">
+                                <img src="pic/pineapple.jpg" alt="鳳梨果醬"> 
+                             </div>
+                             <div class="productsTitle">
                                 <p>鳳梨果醬</p>
-                                <p><span>$39</span></p>
-                            </div>
+                                <p><span>$150</span></p>
+                             </div>
                         </div>
                     </div>
                     <div class="productsCard col-6 col-lg-3">
                         <div class="card">
                             <div class="pic">
-                               <img src="pic/product_vegebox_sm.jpg" alt="防疫營養蔬菜箱"> 
+                                <img src="pic/apple-jam.jpg" alt="橘子果醬"> 
+                             </div>
+                             <div class="productsTitle">
+                                <p>橘子果醬</p>
+                                <p><span>$150</span></p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="productsCard col-6 col-lg-3">
+                        <div class="card">
+                            <div class="pic">
+                                <img src="pic/dragon-fruit-jam.jpg" alt="火龍果果醬"> 
                             </div>
                             <div class="productsTitle">
                                 <p>火龍果果醬</p>
-                                <p><span>$319</span></p>
+                                <p><span>$220</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- 頁碼 -->   
+        <section class="articlePages width">
+            <button>1</button>
+            <button>2</button>
+            <div class="arrow">
+                &#129170;
             </div>
         </section>
     </main>

@@ -15,10 +15,13 @@
 // })
 
 window.addEventListener("load" , function(){
-    for(let i = 0 ; i < btn.length ; i++){
-        var btns = btn[i];
-        btns.addEventListener("click", function(){
-            document.getElementById("btn").classList.add("btnClick");
-        })
+    var btn = document.getElementById("btn");
+    function click(){
+        window.alert('hi');
     }
+    for(let i = 0 ; i < btn.length ; i++){
+        btn[i].onclick = click; 
+    } 
 })
+
+// document.getElementById("btn").classList.add("btnClick");
