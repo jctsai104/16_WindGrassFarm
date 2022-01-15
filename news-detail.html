@@ -18,7 +18,7 @@
     <header>
         <div class="bgImg">
             <!-- 手機的導覽列 -->
-            <div class="smallScreenNav">
+            <div class="smallScreenNav greenNav">
                 <nav role="navigation" id="menuToggle">
                     <input type="checkbox">
                     <span></span>
@@ -53,14 +53,12 @@
             </nav>
     </header>
     <main>
-        <!-- 手機banner -->
-        <div class="smallScreen Banner"></div>
         <!-- 平桌banner -->
         <div class="bigScreen Banner"></div>
         <!-- 主版面 --> 
         <div class="width">
         <!-- 麵包屑 -->
-        <div class="path">
+        <div class="path pt-80">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="news.html">News</a></li>
@@ -115,26 +113,10 @@
                         <div class="row">
                             <div class="recommendCard col-6 col-lg-3">
                                 <div class="pic">
-                                    <img src="pic/alberta.jpg">
+                                    <img src="pic/wheat.jpg">
                                 </div>
                                 <div class="txtTitle">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </div>
-                            </div>
-                            <div class="recommendCard col-6 col-lg-3">
-                                <div class="pic">
-                                    <img src="pic/tea.jpg">
-                                </div>
-                                <div class="txtTitle">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </div>
-                            </div>
-                            <div class="recommendCard col-6 col-lg-3">
-                                <div class="pic">
-                                    <img src="pic/northern-lights.jpg">
-                                </div>
-                                <div class="txtTitle">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    「智慧農業」正夯，農業轉型勢在必行
                                 </div>
                             </div>
                             <div class="recommendCard col-6 col-lg-3">
@@ -142,7 +124,23 @@
                                     <img src="pic/tomatoes-news.jpg">
                                 </div>
                                 <div class="txtTitle">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    透視荷蘭農業概況
+                                </div>
+                            </div>
+                            <div class="recommendCard col-6 col-lg-3">
+                                <div class="pic">
+                                    <img src="pic/farmer-smile.jpg">
+                                </div>
+                                <div class="txtTitle">
+                                    當農業融入都市日常
+                                </div>
+                            </div>
+                            <div class="recommendCard col-6 col-lg-3">
+                                <div class="pic">
+                                    <img src="pic/field.jpg">
+                                </div>
+                                <div class="txtTitle">
+                                    台灣農業社會分析
                                 </div>
                             </div>
                         </div>
@@ -185,15 +183,8 @@
         $(document).ready(function(){
             $(window).scroll(function() {
 
-            var smallHeight = $('.smallScreen').height();
             var bigHeight = $('.bigScreen').height();
             var scrollTop = window.pageYOffset || $(window).scrollTop();
-
-            if (scrollTop >= smallHeight - 300) {
-                $('.smallScreenNav').addClass('bgNav');
-            } else {
-                $('.smallScreenNav').removeClass('bgNav');
-            }
 
             if (scrollTop >= bigHeight - 100) {
                 $('.bigScreenNav').addClass('bgNav');

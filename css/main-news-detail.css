@@ -57,15 +57,10 @@ img{
 a{
     text-decoration: none;
 }
-
-/* banner */
-.smallScreen{
-    background-image: url(../pic/banner-carrot2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
+.greenNav{
+    background-color: #3f6e29f1;
 }
+/* banner */
 .bigScreen{
     display: none;
 }
@@ -158,10 +153,18 @@ article{
 .recommendCard{
     cursor: pointer;
 }
+.recommendCard .txtTitle{
+    margin: 10px 0;
+    color: #666;
+ }
 .recommendCard .txtTitle:hover{
     color: #FFA015;
 }
-
+@media screen and (max-width:991px) {
+    .pt-80{
+        padding-top: 15%;
+    }
+}
 @media screen and (min-width:992px) {
     .width{
         max-width: 800px;
