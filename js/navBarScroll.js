@@ -2,13 +2,20 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
 
-        var height = $('.bgImg').height();
-        var scrollTop = window.pageYOffset || $(window).scrollTop();
+        var smallHeight = $('.bgImg').height();
+            var bigHeight = $('.bgImg').height();
+            var scrollTop = window.pageYOffset || $(window).scrollTop();
 
-        if (scrollTop >= height - 100) {
-            $('.smallScreenNav').addClass('solidNav');
-        } else {
-            $('.smallScreenNav').removeClass('solidNav');
-        }
+            if (scrollTop >= smallHeight - 300) {
+                $('.smallScreenNav').addClass('solidNav');
+            } else {
+                $('.smallScreenNav').removeClass('solidNav');
+            }
+
+            if (scrollTop >= bigHeight - 100) {
+                $('.bigScreenNav').addClass('solidNav');
+            } else {
+                $('.bigScreenNav').removeClass('solidNav');
+            }
     });
 });

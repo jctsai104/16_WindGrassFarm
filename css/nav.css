@@ -134,19 +134,31 @@ body{
         display: none;
     }
     .bigScreenNav{
-        display: flex;
-        margin: auto;
-    }
-    /* .width{
-        max-width: 800px;
-        margin: auto;
-    } */
-    .bigScreenNav ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .bigScreenNav ul{
+        display: flex;
+        align-items: center;
         width: 800px;
         margin: auto;
+    }
+    .frame{
+        max-width: 800px;
+        display: flex;
+    }
+    .left{
+        text-align: left;
+    }
+    .right{
+        justify-content: flex-end;
     }
     .bigScreenNav li{
         font-weight: 700;
@@ -182,17 +194,17 @@ body{
 }
 @media screen and (min-width:1200px) {
     .bigScreenNav ul{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 1200px;
         margin: auto;
+    }
+    .frame{
+        max-width: 1200px;
     }
     .bgImg{
         background-image: url(../pic/bg-tomatoes.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        min-width: 100vh;
+        height: 100vh;
     }
 }

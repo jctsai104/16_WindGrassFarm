@@ -137,20 +137,30 @@
         top: 0;
         left: 0;
         width: 100%;
-        display: flex;
         z-index: 99;
         background-color: #bdbdbd41;
         box-shadow: 0px 1px 10px 0 rgba(0, 0, 0, 0.144);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .frame{
+        max-width: 800px;
+        display: flex;
+    }
+    .left{
+        text-align: left;
+    }
+    .right{
+        justify-content: flex-end;
     }
     .bgNav{
         background-color: #3f6e29f1;
         transition: .5s;
-
     }
     .bigScreenNav ul{
         display: flex;
         align-items: center;
-        justify-content: center;
         width: 800px;
         margin: auto;
     }
@@ -185,11 +195,11 @@
 }
 @media screen and (min-width:1200px) {
     .bigScreenNav ul{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 1200px;
         margin: auto;
     }
 
+    .frame{
+        max-width: 1200px;
+    }
 }
