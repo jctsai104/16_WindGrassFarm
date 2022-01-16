@@ -132,11 +132,8 @@ a{
     align-items: center;
     list-style: none;
     flex-wrap: wrap;
-
 }
 .list li{
-    margin: 2%;
-    padding: 15px 25px;
     text-align: center;
     background-color: #fefff6;
     border: 1px solid #90c57c;
@@ -149,9 +146,7 @@ a{
     color: #fff;
     border: 1px solid #75a863;
 }
-.btnClick{
-    background-color: #FFA015;
-}
+
 /* 商品卡片 */
 .products{
     padding: 5% 0;
@@ -183,6 +178,9 @@ a{
 
 
 /* 商品圖 */
+.bigSize img{
+    cursor: pointer;
+}
 .bigSize .lg img{
     /* display: none; */
     width: 100%;
@@ -242,6 +240,7 @@ a{
 }
 .btnMinus , .btnPlus{
     color: #505050;
+    cursor: pointer;
 }
 .btnMinus:hover , .btnPlus:hover{
     background-color: #ddd;
@@ -267,7 +266,14 @@ a{
 .pic img{
     width: 100%;
 }
-
+.like{
+    cursor: pointer;
+    transform: translate(0);
+    transition: .5s;
+}
+.like:hover{
+    transform: translateY(-6px);
+}
 
 /* 頁碼 */
 .articlePages{
@@ -316,6 +322,11 @@ button:active{
         align-items: center;
         flex-direction: column;
     }
+    /* 分類目錄 */
+    .list li{
+        margin: 1%;
+        padding: 3% 5%;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -347,6 +358,11 @@ button:active{
     }
     .smallScreen{
         display: none;
+    }
+    /* 分類目錄 */
+    .list li{
+        margin: 2%;
+        padding: 15px 25px;
     }
     /* 商品卡片 */
     .card{

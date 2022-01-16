@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/main-about.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/aos.js"></script>
     <script src="js/smoothscroll.min.js"></script>
     <link rel="icon" href="pic/littleicon.ico" type="image/x-icon">
 </head>
@@ -28,7 +30,6 @@
                         <a href="about.html"><li>About</li></a>
                         <a href="news.html"><li>News</li></a>
                         <a href="products.html"><li>Products</li></a>
-                        <a href="reservation.html"><li>Reservation</li></a>
                         <a href="contact.html"><li>Contact</li></a>
                     </ul>
                 </nav>
@@ -185,7 +186,6 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="reservation.html">Reservation</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -221,6 +221,7 @@
             $('.goTop').click(function(){
             window.scroll({ top: 0, left: 0, behavior: 'smooth' });
         })
+        AOS.init();
         });      
     </script>
 </body>

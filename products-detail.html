@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/nav-other.css">
     <link rel="stylesheet" href="css/main-products.css">
     <link rel="stylesheet" href="css/footer.css">
-    
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/aos.js"></script>
     <script src="js/smoothscroll.min.js"></script>
     <script defer src="js/picChange.js"></script>
     <script defer src="js/prodList_cart.js"></script>
@@ -33,7 +34,6 @@
                         <a href="about.html"><li>About</li></a>
                         <a href="news.html"><li>News</li></a>
                         <a href="products.html"><li>Products</li></a>
-                        <a href="reservation.html"><li>Reservation</li></a>
                         <a href="contact.html"><li>Contact</li></a>
                     </ul>
                 </nav>
@@ -72,7 +72,10 @@
             </div>
         </div>
         <!-- 圖 -->
-        <section class="container bigSize width">
+        <section class="container bigSize width" data-aos="fade-zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+        data-aos-offset="0">
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="lg">
@@ -128,7 +131,10 @@
             </div>
         </section>
         <!-- 猜你喜歡 -->
-        <section class="guess container width">
+        <section class="guess container width" data-aos="fade-zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+        data-aos-offset="0">
             <h3 class="centerMobile mtb-50">猜你喜歡</h3>
             <div class="row">
                 <div class="like col-6 col-lg-3">
@@ -173,7 +179,10 @@
             </div>    
         </section>
         <!-- 最近瀏覽 -->
-        <section class="view container width">
+        <section class="view container width" data-aos="fade-zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+        data-aos-offset="0">
             <h3 class="centerMobile mtb-50">最近瀏覽過</h3>
             <div class="row">
                 <div class="like col-6 col-lg-3">
@@ -232,7 +241,6 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="reservation.html">Reservation</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -248,28 +256,19 @@
     <script>
         $(document).ready(function(){
             $(window).scroll(function() {
-
-            // var smallHeight = $('.smallScreen').height();
             var bigHeight = $('.bigScreen').height();
             var scrollTop = window.pageYOffset || $(window).scrollTop();
-
-            // if (scrollTop >= smallHeight - 300) {
-            //     $('.smallScreenNav').addClass('bgNav');
-            // } else {
-            //     $('.smallScreenNav').removeClass('bgNav');
-            // }
-
             if (scrollTop >= bigHeight - 100) {
                 $('.bigScreenNav').addClass('bgNav');
             } else {
                 $('.bigScreenNav').removeClass('bgNav');
             }
-
             });
             
             $('.goTop').click(function(){
             window.scroll({ top: 0, left: 0, behavior: 'smooth' });
         })
+        AOS.init();
         });      
     </script>
 </body>
