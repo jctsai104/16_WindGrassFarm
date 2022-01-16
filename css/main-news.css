@@ -171,15 +171,12 @@ article:hover{
     align-items: center;
     margin: 10px;
 }
-.arrow{
+.arrow img{
     margin: 10px;
-    color: #ccc;
     cursor: pointer;
-    font-size: 2em;
+    vertical-align: middle;
 }
-.arrow:hover{
-    color: #FFA015;
-}
+
 button{
     margin: 10px;
     background-color: transparent;

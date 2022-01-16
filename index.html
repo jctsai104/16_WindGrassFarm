@@ -33,6 +33,7 @@
                         <a href="news.html"><li>News</li></a>
                         <a href="products.html"><li>Products</li></a>
                         <a href="contact.html"><li>Contact</li></a>
+                        <a href="#"><li><img src="pic/shopping-cart-LR-01.svg" alt="購物車" width="28px"></li></a>
                     </ul>
                 </nav>
                 <div class="logo">
@@ -56,7 +57,10 @@
             </nav>
             <!-- 第一屏 -->
             <section class="mainTxt">
-                <div class="socialMedia">
+                <div class="socialMedia" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="2000">
                     <!-- fb icon -->
                     <a href="#"><img src="pic/icon_socialMedia-fb.svg" alt="facebook icon" width="32" height="32"></a>
                     <!-- ig icon -->
@@ -65,12 +69,15 @@
                     <a href="#"><img src="pic/icon_socialMedia-line.svg" alt="Line icon" width="32" height="32"></a>
                 </div>
                 <div class="first">
-                    <img src="pic/newLogo-white.svg" height="80px" alt="logo" class="mb-40">
-                    <h1 class="mb-60">Permaculture</h1>
-                    <h2>與自然共生的樸門設計</h2>
-                    <p>師法自然，</p>>
-                    <p>設計與維護一個具有生產力的人為生態系。</p>
-                    <a href="about.html"><button><span>Learn More</span></button></a>
+                    <img src="pic/newLogo-white.svg" height="80px" alt="logo" class="mb-40" data-aos="fade-down" data-aos-duration="2000">
+                    <h1 class="mb-60" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500" >Permaculture</h1>
+                    <div class="animation" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000">
+                        <h2>與自然共生的樸門設計</h2>
+                        <p>師法自然，</p>
+                        <p>設計與維護一個具有生產力的人為生態系。</p>
+                    </div>
+                    
+                    <a href="about.html" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1500"><button><span>Learn More</span></button></a>
                 </div>
             </section>
         </div>
@@ -78,17 +85,17 @@
     <main>
         <section class="threePoints center width">
             <!-- 大標 -->
-            <h2 class="title mb-60 mt-90">三大核心</h2> 
+            <h2 class="title mb-60 mt-90" data-aos="fade-up" data-aos-duration="1000">三大核心</h2> 
             <div class="wrap">
-                <div class="item pb-40">
+                <div class="item pb-40" data-aos="fade-down" data-aos-duration="2000">
                     <img src="pic/earth.png" alt="照顧地球" class="pb-24">
                     <h3>照顧地球</h3>
                 </div>
-                <div class="item pb-40">
+                <div class="item pb-40" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
                     <img src="pic/care.png" alt="照顧人類" class="pb-24">    
                     <h3>照顧人類</h3>
                 </div>
-                <div class="item pb-40">
+                <div class="item pb-40" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000">
                     <img src="pic/share.png" alt="分享多餘" class="pb-24">
                     <h3>分享多餘</h3>
                 </div>
@@ -98,11 +105,11 @@
         <div class="banner">
         </div>
         <div class="productsBg">
-            <section class="products center pb-90 width">
+            <section class="products center pb-90 width" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
             <!-- 大標 -->
             <h2 class="title mb-60 mt-90">推薦商品</h2>
             <div class="owl-carousel owl-theme">
-                <a href="products-detail.html" target="_blank">
+                <a href="products-detail.html">
                     <div class="goods">
                         <div class="pic">
                             <img src="pic/product_corrot.png" alt="有機紅蘿蔔">
@@ -152,7 +159,7 @@
             </div>
         </div>
         </section>
-        <section class="news center width">
+        <section class="news center width" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
             <!-- 大標 -->
             <h2 class="title mb-60 mt-90">近期消息</h2> 
                 <div class="owl-carousel owl-theme">
@@ -231,7 +238,8 @@
                     margin:10,
                     responsiveClass:true,
                     dots: true,
-                    // autoplay: true,
+                    autoplay: true,
+                    autoplayHoverPause: true,
                     responsive:{
                         0:{
                             items:1,
@@ -243,7 +251,7 @@
                         },
                         1200:{
                             items:3,
-                            nav:true,
+                            nav:false,
                             loop:false
                         }
                     }

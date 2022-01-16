@@ -96,6 +96,7 @@ a{
     font-size: 16px;
     opacity: 85%;
     display: inline-block;
+    margin-bottom: 16px;
 }
 
 .mainTxt .first button{
@@ -104,6 +105,10 @@ a{
 
 .mainTxt .socialMedia{
     display: none;
+}
+.animation{
+    display: flex;
+    flex-direction: column;
 }
 
 /* 三大核心 */
@@ -141,6 +146,7 @@ a{
     align-items: center;
     margin: auto;
     padding-bottom: 24px;
+    cursor: pointer;
 }
 .goods .pic img{
     margin: auto;

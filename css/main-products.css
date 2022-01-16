@@ -140,6 +140,7 @@ a{
     border-radius: 300px;
     color: #90c57c;
     transition: .5s;
+    cursor: pointer;
 }
 .list li:hover{
     background-color: #75a863;
@@ -198,6 +199,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 .description{
     flex-grow: 1;
@@ -233,7 +235,7 @@ a{
     font-size: 0.9em;
 }
 .qtyBox{
-    width: 80px;
+    width: 50px;
     margin: 0 -5px;
     text-align: center;
     background-color: #fff;
@@ -282,15 +284,12 @@ a{
     align-items: center;
     margin-top: 30px;
 }
-.arrow{
+.arrow img{
     margin: 10px;
-    color: #ccc;
     cursor: pointer;
-    font-size: 2em;
+    vertical-align: middle;
 }
-.arrow:hover{
-    color: #FFA015;
-}
+
 button{
     margin: 10px;
     background-color: transparent;
@@ -326,6 +325,10 @@ button:active{
     .list li{
         margin: 1%;
         padding: 3% 5%;
+    }
+    /* 商品描述 */
+    .description{
+        padding-bottom: 15%;
     }
 }
 
