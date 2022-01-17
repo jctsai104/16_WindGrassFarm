@@ -140,7 +140,7 @@ label{
     transition: .5s;
     cursor: pointer;
 }
-input{
+.catalog > input{
     display: none;
 }
 input:checked + label.btn{
@@ -152,9 +152,7 @@ input:checked + label.btn{
 .products{
     padding: 5% 0;
 }
-.cardHidden{
-    display: none;
-}
+
 .card{
     cursor: pointer;
     border-radius: 10px;
