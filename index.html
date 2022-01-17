@@ -83,21 +83,23 @@
         </div>
     </header>
     <main>
-        <section class="threePoints center width">
-            <!-- 大標 -->
-            <h2 class="title mb-60 mt-90" data-aos="fade-up" data-aos-duration="1000">三大核心</h2> 
-            <div class="wrap">
-                <div class="item pb-40" data-aos="fade-down" data-aos-duration="2000">
-                    <img src="pic/earth.png" alt="照顧地球" class="pb-24">
-                    <h3>照顧地球</h3>
-                </div>
-                <div class="item pb-40" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
-                    <img src="pic/care.png" alt="照顧人類" class="pb-24">    
-                    <h3>照顧人類</h3>
-                </div>
-                <div class="item pb-40" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000">
-                    <img src="pic/share.png" alt="分享多餘" class="pb-24">
-                    <h3>分享多餘</h3>
+        <section class="threePoints">
+            <div class="center width">
+                <!-- 大標 -->
+                <h2 class="title mb-60 mt-90" data-aos="fade-up" data-aos-duration="1000">三大核心</h2> 
+                <div class="wrap">
+                    <div class="item pb-40" data-aos="fade-down" data-aos-duration="2000">
+                        <img src="pic/earth.png" alt="照顧地球" class="pb-24">
+                        <h3>照顧地球</h3>
+                    </div>
+                    <div class="item pb-40" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
+                        <img src="pic/care.png" alt="照顧人類" class="pb-24">    
+                        <h3>照顧人類</h3>
+                    </div>
+                    <div class="item pb-40" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000">
+                        <img src="pic/share.png" alt="分享多餘" class="pb-24">
+                        <h3>分享多餘</h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -238,20 +240,18 @@
                     margin:10,
                     responsiveClass:true,
                     dots: true,
-                    autoplay: true,
-                    autoplayHoverPause: true,
+                    nav:false,
+                    // autoplay: true,
+                    // autoplayHoverPause: true,
                     responsive:{
                         0:{
                             items:1,
-                            nav:false
                         },
                         992:{
                             items:3,
-                            nav:false,
                         },
                         1200:{
                             items:3,
-                            nav:false,
                             loop:false
                         }
                     }

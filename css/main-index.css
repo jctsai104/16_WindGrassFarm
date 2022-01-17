@@ -122,6 +122,9 @@ a{
 .threePoints img{
     width: 30%;
 }
+.threePoints{
+    background-color: #F8F6EE;
+}
 
 /* 中間banner */
 .banner{
@@ -132,6 +135,13 @@ a{
     min-height:100vh;
 }
 
+/* 貓頭鷹 */
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #3F6E29;
+}   
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #89b9709a;
+}
 /* 推薦商品 */
 .productsBg{
     background-image: url(../pic/bg-vege-01.jpg);
