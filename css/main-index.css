@@ -142,6 +142,10 @@ a{
 .owl-theme .owl-dots .owl-dot span {
     background-color: #89b9709a;
 }
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin: 3%;
+}
 /* 推薦商品 */
 .productsBg{
     background-image: url(../pic/bg-vege-01.jpg);
@@ -187,6 +191,9 @@ a{
     background-color: #fff;
     border: 1px  rgb(212, 212, 212) solid;
     border-radius: 15px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: none;
 }
 
 .item.article img{
@@ -197,6 +204,7 @@ a{
 .item .txt{
     margin: 4% 6%;
 }
+
 .txt h4{
     text-align: left;
     margin-top: 4px;
@@ -218,7 +226,9 @@ a{
     color: #3F6E29;
     display: inline-block;
 }
-
+.item .txt h4:hover, .item .txt p:hover{
+    color: #FFA015;
+}
 @media screen and (min-width:992px) {
 
     main{
@@ -277,7 +287,7 @@ a{
         cursor: pointer;
         background-color: #FFA015;
         color: #fff;
-        margin-top: 50%;
+        margin-top: 20%;
         padding: 8px 20px;
         border-radius: 300px;
         border: none;
@@ -312,7 +322,7 @@ a{
     /* 近期消息 */
     .news .item{
         margin: 0 5%;
-        box-sizing: border-box  ;
+        box-sizing: border-box ;
     }
 }
 

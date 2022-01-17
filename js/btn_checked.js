@@ -1,27 +1,18 @@
-// $(function(){
-//     var btn = $('#btn');
-//         $(btn. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
-    
-//         $li.click(function(){
-//             $($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
-//             $(this).addClass('active'). siblings ('.active').removeClass('active');
-//         });
-//     });
+let vege = document.querySelectorAll(".vege");
+let jam = document.querySelectorAll(".jam");
+let btns = document.querySelectorAll(".btn");
+let fruit = document.getElementById("fruit")
 
-// $(document).ready(function(){
-//     $('.iconList #btn').click(function(){
-//         $(this).addClass('btnClick').siblings().removeClass('btnClick');
-//     })
-// })
-
-window.addEventListener("load" , function(){
-    var btn = document.getElementById("btn");
-    function click(){
-        window.alert('hi');
+window.addEventListener("load",function(){
+    function show() {
+        if(document.getElementById == fruit){
+            jam.classList.add("cardHidden");
+        }
     }
-    for(let i = 0 ; i < btn.length ; i++){
-        btn[i].onclick = click; 
-    } 
-})
+    
+    for(i=0; i < btns.length ; i++){
+        let btns = document.querySelectorAll(".btn");
+        btns[i].onclick = show;
+    }
 
-// document.getElementById("btn").classList.add("btnClick");
+})
