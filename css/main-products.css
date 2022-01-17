@@ -141,7 +141,7 @@ label{
     cursor: pointer;
 }
 input{
-    appearance: none;
+    display: none;
 }
 input:checked + label.btn{
     background-color: #90c57c;
